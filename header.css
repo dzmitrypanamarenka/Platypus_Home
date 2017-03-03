@@ -18,9 +18,10 @@
     padding: 5px 10px;
     font-size: 13px;
 }
-.top-list a {
+.top-item a {
     color: #ffffff;
 }
+
 .bot {
     display: flex;
     justify-content: space-between;
@@ -32,4 +33,11 @@
 .top-phone {
     font-weight: bolder;
 }
+.top-link {
+    display: flex;
+    justify-content: space-between;
+}
+/*.top-link-icon {*/
+    /*padding-right: 10px;*/
+/*}*/
 
