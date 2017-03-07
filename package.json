@@ -1,0 +1,41 @@
+{
+  "name": "HomePage",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alexeikasiuk/square.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": "",
+  "homepage": "",
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "browser-sync": "^2.2.0",
+    "css-mqpacker": "^5.0.1",
+    "del": "^2.2.2",
+    "gulp-csso": "^2.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-less": "^2.3.2",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-uglify": "^2.0.0",
+    "run-sequence": "^1.2.2"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "engines": {
+    "node": "6.5"
+  }
+}

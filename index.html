@@ -3,77 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="normalize.css"  />
-    <link rel="stylesheet" type="text/css" href="header.less"  />
+    <link rel="stylesheet" type="text/css" href="normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="src/css/style.css"/>
 </head>
 <body>
 
-<header class="header">
-    <section class="elem1">
-        <ul class="elem1-list">
-            <li class="elem1-item">
-                        <span class="elem1-linktext">
-                            Customer Care:
-                        <span>
-                        <span class="elem1-phone">
-                            1800 820 851
-                        </span>
-            </li>
-            <li class="elem1-item">
-                <a href="#" class="elem1-link">
-                    <span class="elem1-linktext">
-                         Need Help?
-                    </span>
-                    <img src="images/1.png" alt="" class = "help">
-                </a>
-            </li>
-            <li class="elem1-item">
-                <a href="#" class="elem1-link">
-                    <img src="images/2.png" alt="" class="login">
-                    <span class="elem1-linktext">
-                        Login
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </section>
-    <section class="elem2">
-        <div class="menu">
-            <a href="#" class="elem2-link">
-                <img src="images/menu.png" alt="" >
-                <span class="elem2-linktext">menu</span>
+<header class="header-block">
+    <ul class="info-block">
+        <li class="item -phone">
+            <span class="text">Customer Care:</span>
+            <a href="tel:1800 820 851" class="link">1800 820 851</a>
+        </li>
+        <li class="item -help">
+            <a href="#" class="link">
+                <span class="text">Need Help?</span>
+                <img src="src/img/1.png" alt="" class="image"/>
+            </a>
+        </li>
+        <li class="item -login">
+            <a href="#" class="link">
+                <img src="src/img/2.png" alt="" class="image"/>
+                <span class="text">Login</span>
+            </a>
+        </li>
+    </ul>
+
+    <section class="nav-block">
+        <div class="box -menu">
+            <a href="#" class="link">
+                <img src="src/img/menu.png" alt="" class="image"/>
+                <span class="text">menu</span>
             </a>
         </div>
-        <div class="logo">
-            <img src="images/logo.png" alt="" >
+        <div class="box -logo">
+            <img src="src/img/logo.png" alt="" class="image"/>
         </div>
-        <ul class="elem2-list">
-            <li class="elem2-item">
-                <a href="#" class="elem2-link">
-                    <img src="images/store-locator.png" alt="" >
-                    <span class="elem2-linktext">store locator</span>
+        <ul class="list -nav">
+            <li class="item">
+                <a href="#" class="link">
+                    <img src="src/img/store-locator.png" alt="" class="image">
+                    <span class="text">store locator</span>
                 </a>
             </li>
-            <li class="elem2-item">
-                <a href="#" class="elem2-link">
-                    <img src="images/search.png" alt="" >
-                    <span class="elem2-linktext">search</span>
+            <li class="item">
+                <a href="#" class="link">
+                    <img src="src/img/search.png" alt="" class="image"/>
+                    <span class="text">search</span>
                 </a>
             </li>
-            <li class="elem2-item">
-                <a href="#" class="elem2-link">
-                    <img src="images/list.png" alt="" >
-                    <span class="elem2-linktext">list</span>
+            <li class="item">
+                <a href="#" class="link">
+                    <img src="src/img/list.png" alt="" class="image"/>
+                    <span class="text">list</span>
                 </a>
             </li>
-            <li class="elem2-item cart">
-                <a href="" class="elem2-link">
-                    <img src="images/cart.png" alt="" >
+            <li class="item -cart">
+                <a href="" class="link">
+                    <img src="src/img/cart.png" alt="" class="image"/>
                 </a>
             </li>
         </ul>
     </section>
 </header>
+
+<div class="content">
+    <section class="banner-wrap">
+        <div class="banner -up">
+            <img src="src/img/banner1.jpg" alt="" class="image">
+            <a href="" class="link">
+                <img src="src/img/shopnow-btn" alt="" class="image">
+            </a>
+        </div>
+        <div class="banner -down">
+            <img src="src/img/banner2.jpg" alt="" class="image">
+            <a href="" class="link">
+                <img src="src/img/shopnow-btn" alt="" class="image">
+            </a>
+        </div>
+        <div class="trust-block">
+            <img src="src/img/trust.png" alt="" class="image">
+        </div>
+    </section>
+</div>
 
 
 </body>

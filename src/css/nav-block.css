@@ -1,0 +1,8 @@
+.nav-block  {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  text-transform: uppercase;
+  font-size: 13px;
+}
