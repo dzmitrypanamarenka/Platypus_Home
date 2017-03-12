@@ -1,9 +1,4 @@
 module.exports = function (grunt) {
-    // grunt.loadNpmTasks("grunt-contrib-less");
-    // // grunt.loadNpmTasks("grunt-postcss");
-    // // grunt.loadNpmTasks("grunt-contrib-watch");
-    // // // grunt.loadNpmTasks("grunt-browser-sync");
-    // grunt.loadNpmTasks('grunt-contrib-imagemin');
     require("load-grunt-tasks")(grunt);
 
 
@@ -33,12 +28,12 @@ module.exports = function (grunt) {
         },
         watch: {
             html: {
-                files: ["*.html"],
-                tasks: ["copy:html"]
+                files: ["src/*.html"],
+                tasks: ["copy:main"]
             },
             style: {
-                files: ["src/css/**/*.less","src/css/**/*.css"],
-                tasks: ["less","postcss", "csso"]
+                files: ["src/css/**/*.less"],
+                tasks: ["less","postcss","csso"]
             }
         },
         browserSync: {
@@ -47,8 +42,11 @@ module.exports = function (grunt) {
                     src: ["dist/*.html", "dist/css/*.css"]
                 },
                 options: {
-                    server: "dist",
-                    watchTask: true
+                    server: {
+                        baseDir: "dist"
+                    },
+                    watchTask: true,
+                    notify: false
                 }
             }
         },
@@ -56,15 +54,15 @@ module.exports = function (grunt) {
             static: {
                 options: {
                     optimizationLevel: 3
-                },
-                dynamic: {
-                    files: [{
-                        expand: true,
-                        cwd: 'src/',
-                        src: ['**/*.{png,jpg,gif}'],
-                        dest: 'dist/img'
-                    }]
                 }
+            },
+            dynamic: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/',
+                    src: ['img/*.{png,jpg,gif}'],
+                    dest: 'dist/'
+                }]
             }
         },
         csscomb: {
@@ -105,21 +103,11 @@ module.exports = function (grunt) {
             }
         },
         copy: {
-            build: {
-                files: [{
-                    expand: true,
-                    src: [
-                        "css/*.css"
-                    ],
-                    dest: "dist/css"
-                }]
-            },
-            html: {
-                files: [{
-                    expand: true,
-                    src: ["src/*.html"],
-                    dest: "dist/pages"
-                }]
+            main: {
+                expand: true,
+                cwd: 'src/',
+                src: ['*.html'],
+                dest: 'dist/'
             }
         },
         clean: {
@@ -140,5 +128,6 @@ module.exports = function (grunt) {
         "symbols",
         "imagemin"
     ]);
+    grunt.registerTask("start", ["go","serve"]);
 
 };
