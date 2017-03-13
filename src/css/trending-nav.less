@@ -1,0 +1,25 @@
+@import "components/link-button";
+@import "components/title";
+@width: 127px;
+@height: 35px;
+@color: black;
+@size: 35px;
+@font-size: @small;
+
+.nav.-add {
+    & {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    > .block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    > .block > .link {
+        margin-right: 8px;
+    }
+}

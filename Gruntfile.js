@@ -27,13 +27,16 @@ module.exports = function (grunt) {
             }
         },
         watch: {
+            options: {
+                livereload: true,
+            },
             html: {
                 files: ["src/*.html"],
                 tasks: ["copy:main"]
             },
             style: {
                 files: ["src/css/**/*.less"],
-                tasks: ["less","postcss","csso"]
+                tasks: ["less"]
             }
         },
         browserSync: {
