@@ -1,11 +1,25 @@
 @import "components/good-item";
 
-.block.-big {
-    width: 25%;
-    min-height: 715px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    box-sizing: border-box;
+.block.-big-col {
+    & {
+        width: 24.5%;
+        min-height: 715px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 8px;
+
+    }
+    &:last-child {
+        margin-right: 0px;
+    }
+    > .link {
+        display: inline-block;
+        box-sizing: content-box;
+        width: 49%;
+    }
+    > .link > .image {
+        width: 100%;
+    }
 }

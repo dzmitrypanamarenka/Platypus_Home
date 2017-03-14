@@ -1,9 +1,10 @@
 .item.-good {
     & {
-        width: 25%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0px 20px;
 
     }
     > .block {
@@ -12,20 +13,24 @@
         align-items: center;
         justify-content: center;
     }
+    > .block > .link {
+        margin-bottom: 5px;
+    }
     .link.-slider {
         display: flex;
         min-height: 475px;
         align-items: center;
     }
-    //> .block > .text.-brand {
-    //    @font-second;
-    //}
-    //> .block > .text.-price {
-    //    @font-second;
-    //}
+    > .block > .text.-brand {
+        font-family: @font-second;
+        text-transform: uppercase;
+    }
+    > .block > .text.-price {
+        font-family: @font-second;
+        text-transform: uppercase;
+    }
     > .block > .subtitle {
         font-family: @font-first;
-        font-size: @big;
         text-transform: uppercase;
     }
 

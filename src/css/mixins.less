@@ -3,19 +3,47 @@
     color: #ffffff;
 }
 .img-size() {
-    max-width: 100%;
-    height: 800px;
+    min-height: 100%;
 }
-.shop-item() {
-    width: 25%;
-    height: 200px;
+.-small {
+    width: 127px;
+    height: 35px;
+    font-size: 0.7rem;
+    line-height: 35px;
 }
-.shop-btn() {
-    display: inline-block;
-    padding-top: 77px;
+.-med {
+    width: 159px;
+    height: 44px;
+    font-size: 0.88rem;
+    line-height: 44px;
 }
-@normal: 0.88rem;
-@big: 1.1rem;
-@small: 0.7rem;
+.-big {
+    width: 199px;
+    height: 55px;
+    font-size: 1.1rem;
+    line-height: 55px;
+}
+._turq {
+    color: @color-first;
+    border: 2px solid @color-first;
+}
+._black {
+    color: black;
+    border: 2px solid black;
+}
+._white {
+    color: white;
+    border: 2px solid white;
+}
+._huge {
+    font-size: 35px;
+}
+._large {
+    font-size: 30px;
+}
+._normal {
+    font-size: 26px;
+}
+@color-first: #59b7b3;
 @font-first: 'SuperGroteskA','Helvetica Neue',Helvetica,Arial,sans-serif;
 @font-second: "Proxima Nova Cond";

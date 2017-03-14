@@ -1,4 +1,7 @@
 .banner-wrap {
+    & {
+        min-height: 800px;
+    }
 
     > .banner.-one {
         .img-size;
@@ -8,19 +11,22 @@
         align-items: flex-end;
         display: none;
     }
-    > .banner.-one > .link {
+    > .banner.-one > .btn {
         padding-bottom: 234px;
         padding-right: 202px;
     }
     > .banner.-two {
         .img-size;
+        box-sizing: border-box;
         background-image: url("../img/banner1.jpg");
+        background-repeat: no-repeat;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
+        padding-bottom: 434px;
     }
-    > .banner.-two > .link {
-        padding-bottom: 234px;
-        padding-right: 184px;
-    }
+    //> .banner.-two > .btn {
+    //    padding-bottom: 234px;
+    //    padding-right: 184px;
+    //}
 }
