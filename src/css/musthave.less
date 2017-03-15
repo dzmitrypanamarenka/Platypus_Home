@@ -1,0 +1,42 @@
+@import "musthave-instagram";
+
+.musthave {
+    & {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 1160px;
+        background-image: url("../img/musthave-bg3.jpg");
+        background-repeat: no-repeat;
+    }
+    .btn {
+        color: @color-first;
+        border: 2px solid @color-first;
+    }
+    > article {
+        margin-right: 100px;
+    }
+    > .holder.-instagram {
+        align-self: flex-end;
+        padding-bottom: 205px;;
+    }
+    > .product-item.-big {
+        padding-bottom: 30px;
+    }
+    > .product-item.-small {
+        align-self: flex-start;
+        padding-top: 95px;
+    }
+    > .product-item.-small > .block {
+        background-color: #ffffff;
+        width: 233px;
+        padding-bottom: 31px;
+    }
+    > .product-item.-big > .block > .title {
+        margin: 72px 0px 34px 0px;
+    }
+    > .product-item.-big > .block > .details {
+        margin-top: 40px;
+        padding-bottom: 30px;
+    }
+}
