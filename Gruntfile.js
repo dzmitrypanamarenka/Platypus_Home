@@ -87,6 +87,7 @@ module.exports = function (grunt) {
         },
         svgstore: {
             options: {
+                prefix: 'icon-svg-',
                 svg: {
                     style: "display: none"
                 }
@@ -118,8 +119,20 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask("symbols", ["svgmin", "svgstore"]);
+    grunt.registerTask("symbols", ["svgmin", "svgstore",'svgi']);
     grunt.registerTask("serve", ["browserSync", "watch"]);
+    grunt.registerTask('svgi', 'Transform SVG sprites to JS file',
+        function () {
+            var svg = [], content;
+
+            content = grunt.file.read('dist/img/symbols.svg');
+            content = content.replace(/'/g, "\\'");
+            content = content.replace(/>\s+</g, "><").trim();
+            svg.push("'" + content + "'");
+            grunt.file.write('dist/js/svg-sprite.js',
+                '(function() {var SVG_SPRITE = ' + svg.join('+\n') +
+                '; var svgDiv = document.createElement("div"); svgDiv.innerHTML = SVG_SPRITE; svgDiv.className = "svg-sprite"; document.body.insertBefore(svgDiv, document.body.firstChild);})();');
+        });
 
     grunt.registerTask("go", [
         "clean",
@@ -130,6 +143,7 @@ module.exports = function (grunt) {
         "csso",
         "symbols",
         "imagemin"
+
     ]);
     grunt.registerTask("start", ["go","serve"]);
 
