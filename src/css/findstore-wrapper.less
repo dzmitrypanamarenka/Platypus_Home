@@ -11,22 +11,37 @@
     }
     > .title {
         color: @color-third;
+        margin: 25px 0;
     }
     > .block {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-self: flex-end;
         text-transform: uppercase;
         color: @color-third;
+        padding-right: 3.64%;
+        margin-bottom: 20px;
     }
     > .block > .-subtitle {
         font-weight: bolder;
+        font-family: @font-first;
+        font-size: .88rem;
+        padding-left: 7px;
     }
     > .block > .link {
         display: flex;
         justify-content: center;
         color: @color-third;
+    }
+    > .block > .link > .text {
+        font-family: @font-third;
+        font-size: .68rem;
+        padding-right: 9px;
+    }
+    > .block > .link > .image {
+        width: 11px;
+        height: 11px;
     }
     > .banner {
         display: flex;
@@ -38,16 +53,17 @@
         width: 628px;
         min-height: 167px;
         border: 1px solid @color-first;
+        box-sizing: border-box;
     }
     > .banner > .title {
-        font-size: 33px;
+        font-size: 2.06rem;
         color: @color-first;
         padding-top: 20px;
         padding-right: 24px;
     }
     > .banner > .text {
         color: @color-third;
-        font-size: 12px;
+        font-size: .75rem;
         margin: 0;
         padding: 12px 24px 0 0;
         line-height: normal;
@@ -59,7 +75,14 @@
         text-transform: uppercase;
         text-decoration: underline;
         color: @color-first;
-        font-size: 13px;
+        font-size: .81rem;
         padding: 15px 24px 26px 0;
+    }
+    > .wrap.-input {
+        width: 628px;
+        margin-bottom: 12px;
+    }
+    > .wrap.-input > .btn {
+        padding-top: 3%;
     }
 }
