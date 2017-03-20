@@ -1,0 +1,31 @@
+.nav.-add {
+    & {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    > .title {
+        margin-top: 35px;
+    }
+    > .block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    > .block > .btn.-small {
+        width: 127px;
+        height: 35px;
+        font-size: .7rem;
+        line-height: 35px;
+        margin-right: 8px;
+        color: @color-2;
+        border: 2px solid @color-2;
+        &:hover {
+            color: @color-3;
+            background-color: @color-2;
+        }
+    }
+}

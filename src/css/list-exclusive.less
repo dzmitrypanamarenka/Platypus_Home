@@ -2,7 +2,7 @@
     & {
         display: flex;
         justify-content: space-between;
-        background-color: #fff;
+        background-color: @color-3;
         padding: 17px 0;
         margin: 0;
     }
@@ -16,6 +16,10 @@
     > .item > .block > .btn {
         color: white;
         border: 2px solid white;
+        &:hover {
+            color: @color-2;
+            background-color: @color-3;
+        }
     }
     > .item:nth-child(1) {
         background-image: url('../img/exclusive-pic1.png');

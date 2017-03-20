@@ -10,7 +10,7 @@
     }
     > .banner.-one {
         min-height: 800px;
-        background-image: url("../img/banner2.jpg");
+        background-image: url('../img/banner2.jpg');
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -25,13 +25,17 @@
         height: 55px;
         font-size: 1.1rem;
         line-height: 55px;
-        color: @color-second;
-        border: 2px solid @color-second;
+        color: @color-2;
+        border: 2px solid @color-2;
+        &:hover {
+            color: @color-3;
+            background-color: @color-2;
+        }
     }
     > .banner.-two {
         min-height: 800px;
         box-sizing: border-box;
-        background-image: url("../img/banner1.jpg");
+        background-image: url('../img/banner1.jpg');
         background-repeat: no-repeat;
         display: flex;
         justify-content: flex-end;

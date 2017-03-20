@@ -1,0 +1,95 @@
+.nav-block {
+    & {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        text-transform: uppercase;
+        font-size: 81%;
+    }
+    > .box.-menu {
+        display: flex;
+        padding: 37.5px;
+    }
+    > .box.-menu > .link {
+        display: flex;
+        align-items: center;
+    }
+    > .box.-menu > .link > .text {
+        padding-left: 12px;
+        color: @color-3;
+        line-height: 2.15;
+        padding-top: 4px;
+    }
+    > .box.-menu > .link > .icon {
+        width: 26px;
+        height: 21px;
+    }
+    > .box.-logo {
+        display: flex;
+        align-items: center;
+        padding-left: 373px;
+        padding-bottom: 17px;
+    }
+    > .box.-logo > .icon {
+        width: 243px;
+        height: 48px;
+    }
+    > .list.-nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+
+    }
+    > .list.-nav > .item {
+        display: flex;
+        min-width: 100px;
+        min-height: 100px;
+        justify-content: center;
+        padding: 0 18px;
+        box-sizing: border-box;
+        &:hover {
+            background-color: @color-1;
+        }
+        &:nth-child(3):hover {
+            border-right: 1px solid @color-2;
+            padding-right: 17px;
+        }
+    }
+    > .list.-nav > .item > .link {
+        display: flex;
+        align-items: center;
+        min-height: inherit;
+    }
+    > .list.-nav > .item > .link > .text {
+        display: inline-block;
+        color: @color-3;
+    }
+    > .list.-nav > .item > .link > .icon {
+        color: @color-3;
+        margin-right: 8px;
+    }
+    > .list.-nav > .item.-cart {
+        display: flex;
+        background-color: @color-1;
+        padding-right: 0;
+        box-sizing: border-box;
+    }
+    > .list.-nav > .item.-cart > .link > .icon {
+        width: 26px;
+        height: 25px;
+    }
+    > .list.-nav > .item.-locator > .link > .icon {
+        width: 16px;
+        height: 23px;
+    }
+    > .list.-nav > .item.-search > .link > .icon {
+        width: 23px;
+        height: 23px;
+    }
+    > .list.-nav > .item.-list > .link > .icon {
+        width: 26px;
+        height: 25px;
+    }
+}

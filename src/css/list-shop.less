@@ -14,19 +14,23 @@
         height: 200px;
     }
     > .item > .btn {
-        color: white;
+        color: @color-3;
         border: 2px solid white;
+        &:hover {
+            color: @color-2;
+            background-color: @color-3;
+        }
     }
     > .item.-men {
-        background-image: url("../img/shoplist-men.png");
+        background-image: url('../img/shoplist-men.png');
     }
     > .item.-women {
-        background-image: url("../img/shoplist-women.png");
+        background-image: url('../img/shoplist-women.png');
     }
     > .item.-kids {
-        background-image: url("../img/shoplist-kids.png");
+        background-image: url('../img/shoplist-kids.png');
     }
     > .item.-sale {
-        background-image: url("../img/shoplist-sale.png");
+        background-image: url('../img/shoplist-sale.png');
     }
 }

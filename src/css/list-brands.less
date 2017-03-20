@@ -1,10 +1,22 @@
 .list.-brands {
-    box-sizing: border-box;
-    margin: 0px;
-    min-height: 102px;
-    background-color: black;
-    padding: 25px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    & {
+        box-sizing: border-box;
+        margin: 0;
+        min-height: 102px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    > .item {
+        width: 7.14%;
+        min-height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: rgba(255,255,255,.3);
+        }
+    }
 }

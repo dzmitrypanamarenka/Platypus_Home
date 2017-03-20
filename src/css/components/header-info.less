@@ -1,0 +1,38 @@
+.info-block{
+    & {
+        margin: 0px;
+        height: 30px;
+        background-color: #383839;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: @color-3;
+    }
+    > .item {
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+        font-size: 81%;
+    }
+    > .link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: @color-3;
+    }
+    > .item.-phone > .link {
+        font-weight: bolder;
+        padding-left: 12px;
+        color: @color-3;
+    }
+    > .item.-login > .link > .image {
+        padding-right: 6px;
+    }
+    > .item.-login > .link > .text {
+        color: @color-3;
+    }
+    > .item.-help > .link > .text {
+        padding-right: 7px;
+        color: @color-3;
+    }
+}
