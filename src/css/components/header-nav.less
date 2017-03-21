@@ -1,16 +1,21 @@
 .nav-block {
     & {
-        height: 100px;
-        width: 100%;
+        min-height: 100px;
         display: flex;
         justify-content: space-between;
         background-color: black;
         text-transform: uppercase;
         font-size: 81%;
     }
+    .text {
+        font-family: @font-1;
+        font-weight: 700;
+        color: @color-3;
+    }
     > .box.-menu {
         display: flex;
-        padding: 37.5px;
+        padding-left: 1.9%;
+        //padding: 37.5px;
     }
     > .box.-menu > .link {
         display: flex;
@@ -18,8 +23,6 @@
     }
     > .box.-menu > .link > .text {
         padding-left: 12px;
-        color: @color-3;
-        line-height: 2.15;
         padding-top: 4px;
     }
     > .box.-menu > .link > .icon {
@@ -29,7 +32,8 @@
     > .box.-logo {
         display: flex;
         align-items: center;
-        padding-left: 373px;
+        align-self: center;
+        padding-left: 21.6%;
         padding-bottom: 17px;
     }
     > .box.-logo > .icon {
@@ -38,43 +42,39 @@
     }
     > .list.-nav {
         display: flex;
-        justify-content: space-between;
         margin: 0;
-
+        padding: 0;
     }
     > .list.-nav > .item {
         display: flex;
-        min-width: 100px;
+        justify-content: space-between;
         min-height: 100px;
-        justify-content: center;
-        padding: 0 18px;
         box-sizing: border-box;
         &:hover {
             background-color: @color-1;
         }
-        &:nth-child(3):hover {
-            border-right: 1px solid @color-2;
-            padding-right: 17px;
-        }
     }
     > .list.-nav > .item > .link {
         display: flex;
+        width: 100%;
         align-items: center;
         min-height: inherit;
+        padding: 0 26px;
     }
+
     > .list.-nav > .item > .link > .text {
         display: inline-block;
-        color: @color-3;
+        white-space: nowrap;
     }
     > .list.-nav > .item > .link > .icon {
         color: @color-3;
         margin-right: 8px;
     }
-    > .list.-nav > .item.-cart {
+    > .list.-nav > .item.-cart > .link {
         display: flex;
         background-color: @color-1;
-        padding-right: 0;
         box-sizing: border-box;
+        padding: 0 33px;
     }
     > .list.-nav > .item.-cart > .link > .icon {
         width: 26px;

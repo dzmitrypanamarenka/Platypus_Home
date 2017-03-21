@@ -16,14 +16,21 @@
 .title.-normal {
     font-size: 26px;
 }
+
+.title.-small {
+    font-size: 18px;
+}
+
 @color-1: #59b7b3;
 @color-2: #000;
 @color-3: #fff;
 
-@font-1: 'SuperGroteskA','Helvetica Neue',Helvetica,Arial,sans-serif;
-@font-2: 'Proxima Nova Cond', 'Helvetica Neue', Helvetica,Arial, sans-serif;
-@font-3: 'Open Sans';
-@font-4: 'BrainFlower','Comic Sans MS','Comic Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+@font-0: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+@font-1: 'SuperGroteskA', @font-0;
+@font-2: 'ProximaNova', @font-0;
+@font-3: 'Open Sans', @font-0;
+@font-4: 'BrainFlower','Comic Sans MS','Comic Sans',@font-0;
+@font-5: 'ProximaNovaCond', @font-0;
 
 // 12px - .75rem
 // 13px - .81rem

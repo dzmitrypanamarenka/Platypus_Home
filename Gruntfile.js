@@ -112,10 +112,16 @@ module.exports = function (grunt) {
                 cwd: 'src/',
                 src: ['*.html'],
                 dest: 'dist/'
+            },
+            fonts: {
+                expand: true,
+                cwd: 'src/fonts/',
+                src: ['*.{woff,woff2}'],
+                dest: 'dist/fonts/'
             }
         },
         clean: {
-            build: ["dist"]
+            build: ['dist']
         }
     });
 

@@ -16,11 +16,20 @@
         display: flex;
         align-items: center;
         text-transform: uppercase;
-        font-family: @font-2;
+        font-family: @font-5;
+        font-weight: 400;
+        cursor: pointer;
+        color: @color-2;
+        &:hover {
+            color: @color-1;
+        }
     }
-    > .block.-caption > .image {
+    > .block.-caption > .icon {
         margin-right: 5px;
         margin-left: 3px;
+        width: 20px;
+        height: 20px;
+        fill: currentColor; //need fix
     }
     > .block.-instagram {
         background-color: @color-3;
