@@ -7,6 +7,9 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        padding-right: 10px;
+        width: 100%;
+        box-sizing: border-box;
     }
     > .item {
         display: flex;
@@ -14,6 +17,9 @@
         padding-right: 20px;
         font-size: .81rem;
         color: @color-3;
+        &:last-child {
+            padding-right: 0;
+        }
     }
     > .link {
         display: flex;

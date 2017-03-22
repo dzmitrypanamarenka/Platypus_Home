@@ -1,37 +1,72 @@
-.item.-benefits {
-    & {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 75px;
-        color: @color-1;
-    }
-    > .icon {
-        display: inline-block;
-        width: 37px;
-        height: 34px;
-        fill: @color-1;
-        stroke: @color-1;
-    }
-    > .text.-adv {
-        margin: 0;
-        color: @color-1;
-        line-height: 3.2rem;
-        font-family: @font-4;
-        font-weight: 400;
-        font-size: 200%;
-        text-transform: uppercase;
-        padding-left: 5.25px;
-    }
-    > .text.-desc {
-        margin: 0;
-        color: @color-1;
-        font-size: .75rem;
-        font-family: @font-1;
-        font-weight: 700;
-        line-height: 1.2rem;
-        text-transform: uppercase;
-        padding-left: 5.25px;
-        padding-top: 10.5px;
+//.item.-benefits {
+//    & {
+//        display: flex;
+//        justify-content: center;
+//        align-items: center;
+//        color: @color-1;
+//    }
+//    > .icon {
+//        display: inline-block;
+//        width: 37px;
+//        height: 34px;
+//        fill: @color-1;
+//        stroke: @color-1;
+//    }
+//    > .text.-adv {
+//        margin: 0;
+//        color: @color-1;
+//        line-height: 3.2rem;
+//        font-family: @font-4;
+//        font-weight: 400;
+//        font-size: 200%;
+//        text-transform: uppercase;
+//        padding-left: 5.25px;
+//    }
+//    > .text.-desc {
+//        margin: 0;
+//        color: @color-1;
+//        font-size: .75rem;
+//        font-family: @font-1;
+//        font-weight: 700;
+//        line-height: 1.2rem;
+//        text-transform: uppercase;
+//        padding-left: 5.25px;
+//        padding-top: 10.5px;
+//    }
+//}
+@media @mobile {
+    .item.-benefits {
+        & {
+            display: flex;
+            align-items: center;
+            color: @color-1;
+        }
+        > .text.-adv {
+            margin: 0;
+            color: @color-1;
+            line-height: 1.6rem;
+            font-family: @font-4;
+            font-weight: 400;
+            font-size: 150%;
+            text-transform: uppercase;
+            padding-left: 5.25px;
+        }
+        > .text.-desc {
+            margin: 0;
+            color: @color-1;
+            font-size: .75rem;
+            font-family: @font-1;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-left: 5.25px;
+            padding-top: 10.5px;
+        }
+        > .icon {
+            display: inline-block;
+            width: 37px;
+            height: 34px;
+            fill: @color-1;
+            stroke: @color-1;
+        }
     }
 }

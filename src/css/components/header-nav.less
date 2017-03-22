@@ -1,95 +1,184 @@
-.nav-block {
-    & {
-        min-height: 100px;
-        display: flex;
-        justify-content: space-between;
-        background-color: black;
-        text-transform: uppercase;
-        font-size: 81%;
-    }
-    .text {
-        font-family: @font-1;
-        font-weight: 700;
-        color: @color-3;
-    }
-    > .box.-menu {
-        display: flex;
-        padding-left: 1.9%;
-        //padding: 37.5px;
-    }
-    > .box.-menu > .link {
-        display: flex;
-        align-items: center;
-    }
-    > .box.-menu > .link > .text {
-        padding-left: 12px;
-        padding-top: 4px;
-    }
-    > .box.-menu > .link > .icon {
-        width: 26px;
-        height: 21px;
-    }
-    > .box.-logo {
-        display: flex;
-        align-items: center;
-        align-self: center;
-        padding-left: 21.6%;
-        padding-bottom: 17px;
-    }
-    > .box.-logo > .icon {
-        width: 243px;
-        height: 48px;
-    }
-    > .list.-nav {
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-    > .list.-nav > .item {
-        display: flex;
-        justify-content: space-between;
-        min-height: 100px;
-        box-sizing: border-box;
-        &:hover {
+@media @mobile {
+    .nav-block {
+        & {
+            background-color: @color-2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .text {
+            font-family: @font-1;
+            font-weight: 400;
+            color: @color-3;
+            display: inline-block;
+            white-space: nowrap;
+        }
+        > .box.-logo {
+            margin: 0 auto;
+        }
+        > .box.-logo > .icon {
+            height: 34px;
+            width: 175px;
+        }
+        > .box.-menu {
+            padding: 9px 19px;
+            cursor: pointer;
+            &:hover {
+                background-color: @color-1;
+            }
+        }
+        > .box.-menu > .link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        > .box.-cart {
+            display: flex;
+            height: 100%;
             background-color: @color-1;
+            box-sizing: border-box;
+            padding: 17px 25px 13px;
+            margin-bottom: 1px;
+            cursor: pointer;
+        }
+        > .list {
+            display: flex;
+            width: 100%;
+            flex-grow: 1;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+        > .list > .item {
+            display: flex;
+            padding: 18px 0;
+            width: 33.3%;
+            box-sizing: border-box;
+            cursor: pointer;
+            &:hover {
+                background-color: @color-1;
+            }
+
+        }
+        > .list > .item > .link {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+        }
+        > .list > .item > .link > .icon {
+            margin-right: 8px;
+        }
+        > .list > .item.-locator > .link > .icon {
+            width: 16px;
+            height: 23px;
+        }
+        > .list > .item.-search > .link > .icon {
+            width: 23px;
+            height: 23px;
+        }
+        > .list > .item.-list > .link > .icon {
+            width: 26px;
+            height: 25px;
+        }
+        > .box.-cart > .link > .icon {
+            width: 26px;
+            height: 25px;
+        }
+        > .box.-menu > .link > .icon {
+            width: 26px;
+            height: 21px;
         }
     }
-    > .list.-nav > .item > .link {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        min-height: inherit;
-        padding: 0 26px;
-    }
+}
 
-    > .list.-nav > .item > .link > .text {
-        display: inline-block;
-        white-space: nowrap;
+@media @tablet {
+    .nav-block {
+        > .box.-cart {
+            order: 1;
+            margin-bottom: 0;
+            margin-left: 1px;
+            padding: 34.5px 37px;
+        }
+        > .box.-menu {
+            padding: 23.5px 30px;
+        }
+        > .box.-menu > .link > .text {
+            padding: 10px 0 0;
+        }
+        > .box.-logo {
+            display: flex;
+            margin-right: 9%;
+            padding: 0;
+        }
+        > .box.-logo > .icon {
+            height: 45px;
+            width: 243px;
+        }
+        > .list {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+            flex-grow: 0;
+            width: auto;
+        }
+        > .list > .item {
+            width: auto;
+            padding: 22.5px 15px;
+        }
+        > .list > .item > .link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        > .list > .item > .link > .icon {
+            padding-bottom: 10px;
+        }
+        > .list > .item.-list {
+            display: none;
+        }
     }
-    > .list.-nav > .item > .link > .icon {
-        color: @color-3;
-        margin-right: 8px;
+}
+
+@media @desktop {
+    .nav-block {
+        > .list.-nav > .item {
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+        > .list.-nav > .item > .link {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 0 26px;
+        }
+        > .list > .item.-list {
+            display: flex;
+            padding: 21.5px 15px;
+        }
     }
-    > .list.-nav > .item.-cart > .link {
-        display: flex;
-        background-color: @color-1;
-        box-sizing: border-box;
-        padding: 0 33px;
-    }
-    > .list.-nav > .item.-cart > .link > .icon {
-        width: 26px;
-        height: 25px;
-    }
-    > .list.-nav > .item.-locator > .link > .icon {
-        width: 16px;
-        height: 23px;
-    }
-    > .list.-nav > .item.-search > .link > .icon {
-        width: 23px;
-        height: 23px;
-    }
-    > .list.-nav > .item.-list > .link > .icon {
-        width: 26px;
-        height: 25px;
+}
+
+@media (min-width: 1400px) {
+    .nav-block {
+        .text {
+            font-size: 82%;
+            text-transform: uppercase;
+        }
+        > .list.-nav > .item {
+            padding: 24.5px 15px;
+        }
+        > .list > .item.-list {
+            display: flex;
+            padding: 21.5px 15px;
+        }
+        > .box.-menu {
+            padding: 25.5px 30px;
+        }
     }
 }
