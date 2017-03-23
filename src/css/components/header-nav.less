@@ -3,7 +3,7 @@
         & {
             background-color: @color-2;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
             flex-wrap: wrap;
             width: 100%;
@@ -17,7 +17,10 @@
             white-space: nowrap;
         }
         > .box.-logo {
-            margin: 0 auto;
+            position: absolute;
+            top: 38%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         > .box.-logo > .icon {
             height: 34px;
@@ -28,6 +31,7 @@
             fill: @color-1;
         }
         > .box.-menu {
+            margin-right: auto;
             padding: 12px 19px 6px;
             cursor: pointer;
             &:hover {
@@ -110,17 +114,18 @@
             order: 1;
             margin-bottom: 0;
             margin-left: 1px;
-            padding: 34.5px 37px;
+            padding: 35.5px 37px;
         }
         > .box.-menu {
-            padding: 23.5px 30px;
+            padding: 25.5px 30px;
         }
         > .box.-menu > .link > .text {
             padding: 10px 0 0;
         }
         > .box.-logo {
             display: flex;
-            margin-right: 9%;
+            top: 55%;
+            left: 42%;
             padding: 0;
         }
         > .box.-logo > .icon {
@@ -137,7 +142,7 @@
         }
         > .list > .item {
             width: auto;
-            padding: 22.5px 15px;
+            padding: 24.5px 20px;
             &:nth-child(1) {
                 order: 0;
             }
@@ -167,11 +172,17 @@
             display: flex;
             width: 100%;
             align-items: center;
-            padding: 0 26px;
         }
         > .list > .item.-list {
             display: flex;
-            padding: 21.5px 15px;
+            padding: 21.5px 25px;
+        }
+        > .box.-logo {
+            top: 55%;
+            left: 50%;
+        }
+        > .list > .item > .link > .icon {
+            margin-right: 0;
         }
     }
 }
@@ -183,14 +194,33 @@
             text-transform: uppercase;
         }
         > .list.-nav > .item {
-            padding: 24.5px 15px;
+            padding: 38.5px 15px;
         }
         > .list > .item.-list {
-            display: flex;
             padding: 21.5px 15px;
         }
+        > .list.-nav > .item > .link {
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        > .list > .item > .link > .icon {
+            margin-right: 8px;
+            padding: 0;
+        }
         > .box.-menu {
-            padding: 25.5px 30px;
+            padding: 39.5px 25px;
+        }
+        > .box.-menu > .link {
+            display: flex;
+            flex-direction: row;
+        }
+        > .box.-menu > .link > .icon {
+            margin-right: 10px;
+        }
+        > .box.-menu > .link > .text {
+            padding: 0;
         }
     }
 }
