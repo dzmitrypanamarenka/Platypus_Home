@@ -1,22 +1,92 @@
-.list.-brands {
-    & {
-        box-sizing: border-box;
-        margin: 0;
-        min-height: 102px;
-        background-color: black;
-        display: flex;
-        align-items: center;
-        padding: 0;
-    }
-    > .item {
-        width: 7.14%;
-        min-height: inherit;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+//.list.-brands {
+//    & {
+//        box-sizing: border-box;
+//        margin: 0;
+//        background-color: black;
+//        display: flex;
+//        align-items: center;
+//        padding: 0;
+//    }
+//    > .item {
+//        width: 7.14%;
+//        min-height: inherit;
+//        display: flex;
+//        align-items: center;
+//        justify-content: center;
+//
+//        &:hover {
+//            background-color: rgba(255, 255, 255, .3);
+//        }
+//    }
+//}
 
-        &:hover {
-            background-color: rgba(255,255,255,.3);
+@media @mobile {
+    .list.-brands {
+        & {
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+        }
+        > .item {
+            min-height: 102px;
+            display: flex;
+            width: 33%;
+            justify-content: center;;
+            box-sizing: border-box;
+            &:hover {
+                background-color: rgba(255, 255, 255, .3);
+            }
+            &:nth-child(n+5) {
+                display: none;
+            }
+        }
+        > .item > .link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            box-sizing: border-box;
+            padding: 0 9px;
+        }
+        > .link {
+            box-sizing: border-box;
+            padding: 0 10px;
+        }
+    }
+}
+
+@media @tablet {
+    .list.-brands {
+        > .item {
+            &:nth-child(-n+7) {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media @desktop {
+    .list.-brands {
+        > .item {
+            &:nth-child(-n+12) {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media @big-desktop {
+    .list.-brands {
+        > .item {
+            width: 7.14%;
+            &:nth-child(-n+15) {
+                display: flex;
+            }
         }
     }
 }

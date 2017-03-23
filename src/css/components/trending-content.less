@@ -1,7 +1,33 @@
 @import 'components/trending-col';
 @import 'components/trending-big';
 
-.block.-content {
-    display: flex;
-    margin-top: 15px;
+//.block.-content {
+//    display: flex;
+//    margin-top: 15px;
+//}
+
+@media @mobile {
+    .block.-content {
+        & {
+            display: flex;
+            margin-top: 15px;
+        }
+        > .-col {
+            display: none;
+        }
+        > .-big-col {
+            display: none;
+        }
+        > .-big-col:first-child {
+            display: flex;
+        }
+    }
+}
+
+@media @tablet {
+    .block.-content {
+        > .-col:nth-child(2) {
+            display: flex;
+        }
+    }
 }

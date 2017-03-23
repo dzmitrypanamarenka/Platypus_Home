@@ -1,44 +1,8 @@
-//.list.-shop {
-//    & {
-//        display: flex;
-//        justify-content: space-between;
-//        margin: 0;
-//        padding: 0;
-//        width: 100%;
-//    }
-//    > .item {
-//        display: flex;
-//        justify-content: center;
-//        align-items: center;
-//        width: 25%;
-//        height: 200px;
-//    }
-//    > .item > .btn {
-//        color: @color-3;
-//        border: 2px solid white;
-//        &:hover {
-//            color: @color-2;
-//            background-color: @color-3;
-//        }
-//    }
-//    > .item.-men {
-//        background-image: url('../img/shoplist-men.png');
-//    }
-//    > .item.-women {
-//        background-image: url('../img/shoplist-women.png');
-//    }
-//    > .item.-kids {
-//        background-image: url('../img/shoplist-kids.png');
-//    }
-//    > .item.-sale {
-//        background-image: url('../img/shoplist-sale.png');
-//    }
-//}
 @media @mobile {
     .list.-shop {
         & {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             margin: 0;
             padding: 0;
             width: 100%;
@@ -47,35 +11,51 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 78px 0;
             box-sizing: border-box;
-            flex-grow: 1;
-            flex-basis: 25%;
+            position: relative;
+        }
+        > .item > .image {
+            width: 100%;
         }
         > .item > .btn {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
             color: @color-3;
             border: 1px solid @color-3;
             font-weight: 400;
+            font-size: .75rem;
+            font-family: @font-1;
             &:hover {
                 color: @color-2;
                 background-color: @color-3;
             }
         }
-        > .item.-men {
-            background-image: url('../img/shoplist-men.png');
-            background-repeat: no-repeat;
+    }
+}
+
+@media @tablet {
+    .list.-shop {
+        & {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
-        > .item.-women {
-            background-image: url('../img/shoplist-women.png');
-            background-repeat: no-repeat;
+        > .item {
+            flex-basis: 50%;
         }
-        > .item.-kids {
-            background-image: url('../img/shoplist-kids.png');
-            background-repeat: no-repeat;
+    }
+}
+
+@media @desktop {
+    .list.-shop {
+        > .item {
+            flex-basis: 25%;
         }
-        > .item.-sale {
-            background-image: url('../img/shoplist-sale.png');
-            background-repeat: no-repeat;
+        > .item > .btn {
+            font-size: .87rem;
+            border: 2px solid @color-3;
         }
     }
 }

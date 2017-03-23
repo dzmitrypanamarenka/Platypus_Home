@@ -22,9 +22,13 @@
         > .box.-logo > .icon {
             height: 34px;
             width: 175px;
+            fill: @color-3;
+        }
+        > .box.-logo > .icon > .st1 {
+            fill: @color-1;
         }
         > .box.-menu {
-            padding: 9px 19px;
+            padding: 12px 19px 6px;
             cursor: pointer;
             &:hover {
                 background-color: @color-1;
@@ -65,7 +69,6 @@
             &:nth-child(1) {
                 order: 1;
             }
-
         }
         > .list > .item > .link {
             display: flex;
@@ -74,6 +77,7 @@
         }
         > .list > .item > .link > .icon {
             margin-right: 8px;
+            fill: @color-3;
         }
         > .list > .item.-locator > .link > .icon {
             width: 16px;
@@ -90,10 +94,12 @@
         > .box.-cart > .link > .icon {
             width: 26px;
             height: 25px;
+            fill: @color-3;
         }
         > .box.-menu > .link > .icon {
             width: 26px;
             height: 21px;
+            fill: @color-3;
         }
     }
 }
@@ -132,6 +138,9 @@
         > .list > .item {
             width: auto;
             padding: 22.5px 15px;
+            &:nth-child(1) {
+                order: 0;
+            }
         }
         > .list > .item > .link {
             display: flex;
