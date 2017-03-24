@@ -1,0 +1,45 @@
+//.block.-col {
+//    & {
+//        width: 12.3%;
+//        margin-right: 8px;
+//        display: flex;
+//        flex-direction: row;
+//        flex-wrap: wrap;
+//    }
+//    > .link {
+//        display: inline-block;
+//    }
+//    > .link > .image {
+//        width: 100%;
+//        height: 95.59%;
+//    }
+//}
+@media @mobile {
+    .block.-col {
+        & {
+            box-sizing: border-box;
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        > .link {
+            display: block;
+            height: 95.59%;         // need fix
+            padding-bottom: 10px;
+        }
+        > .link > .image {
+            display: block;
+            height: 98%;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .block.-col {
+        & {
+
+        }
+    }
+}

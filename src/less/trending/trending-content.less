@@ -9,6 +9,7 @@
 @media @mobile {
     .block.-content {
         & {
+            width: 100%;
             display: flex;
             margin-top: 15px;
         }
@@ -18,16 +19,27 @@
         > .-big-col {
             display: none;
         }
-        > .-big-col:first-child {
+        > .block:nth-child(-n+3) {
             display: flex;
+        }
+        > .link.-slider {
+            display: flex;
+            align-items: center;
+        }
+        > .link.-slider > .icon {
+            width: 25px;
+            height: 25px;
         }
     }
 }
 
 @media @tablet {
     .block.-content {
-        > .-col:nth-child(2) {
+        > .block {
             display: flex;
+        }
+        > .link.-slider {
+            display: none;
         }
     }
 }

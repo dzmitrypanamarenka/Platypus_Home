@@ -19,6 +19,38 @@
             padding-right: 0;
         }
     }
+
+    > .item.-phone > .link {
+        font-weight: 700;
+        padding-left: 12px;
+        color: @color-3;
+        font-family: @font-1;
+    }
+    > .item.-phone > .text {
+        font-family: @font-1;
+        font-size: .81rem;
+        font-weight: 400;
+    }
+    > .item.-login > .link > .icon {
+        width: 15px;
+        height: 15px;
+        padding-right: 6px;
+        fill: @color-3;
+    }
+    > .item > .link > .text {
+        color: @color-3;
+        font-family: @font-1;
+        font-size: .81rem;
+        font-weight: 400;
+    }
+    > .item.-help > .link > .text {
+        padding-right: 7px;
+    }
+    > .item.-help > .link > .icon {
+        width: 8px;
+        height: 5px;
+        fill: @color-3;
+    }
     > .item > .link {
         display: flex;
         justify-content: space-between;
@@ -30,26 +62,8 @@
             }
             & .icon {
                 fill: @color-1;
-                stroke: @color-1;
             }
         }
-    }
-    > .item.-phone > .link {
-        font-weight: 700;
-        padding-left: 12px;
-        color: @color-3;
-        font-family: @font-1;
-    }
-    > .item.-login > .link > .image {
-        padding-right: 6px;
-    }
-    > .item > .link > .text {
-        color: @color-3;
-        font-family: @font-1;
-        font-weight: 400;
-    }
-    > .item.-help > .link > .text {
-        padding-right: 7px;
     }
 }
 
@@ -68,7 +82,7 @@
     .info-block {
         & {
             justify-content: flex-end;
-            padding-right: 10px;
+            padding-right: 18px;
         }
         > .item {
             padding-right: 20px;

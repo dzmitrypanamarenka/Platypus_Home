@@ -6,7 +6,7 @@ module.exports = function (grunt) {
         less: {
             style: {
                 files: {
-                    "dist/css/style.css": "src/css/style.less"
+                    "dist/css/style.css": "src/less/style.less"
                 }
             }
         },
@@ -35,7 +35,7 @@ module.exports = function (grunt) {
                 tasks: ["copy:main"]
             },
             style: {
-                files: ["src/css/**/*.less"],
+                files: ["src/less/**/*.less"],
                 tasks: ["less"]
             }
         },
