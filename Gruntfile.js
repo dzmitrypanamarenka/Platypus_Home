@@ -6,7 +6,8 @@ module.exports = function (grunt) {
         less: {
             style: {
                 files: {
-                    "dist/css/style.css": "src/less/style.less"
+                    "dist/css/style.css": "src/less/style.less",
+                    'dist/css/fonts.css': 'src/less/fonts.less'
                 }
             }
         },
@@ -28,7 +29,7 @@ module.exports = function (grunt) {
         },
         watch: {
             options: {
-                livereload: true,
+                livereload: true
             },
             html: {
                 files: ["src/*.html"],

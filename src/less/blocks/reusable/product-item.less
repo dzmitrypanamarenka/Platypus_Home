@@ -1,0 +1,111 @@
+//.product-item {
+//    .display () {
+//        display: flex;
+//        flex-direction: column;
+//        align-items: center;
+//        justify-content: center;
+//    }
+//    & {
+//        display: flex;
+//        justify-content: space-between;
+//        align-items: center;
+//    }
+//    > .block {
+//        .display;
+//    }
+//    > .block > .details {
+//        .display;
+//    }
+//    > .link.-slider {
+//        display: flex;
+//        min-height: 475px;
+//        align-items: center;
+//    }
+//    > .link.-slider > .icon {
+//        width: 12px;
+//        height: 20px;
+//    }
+//    > .block > .link {
+//        margin-bottom: 5px;
+//    }
+//    > .block > .details > .text.-brand {
+//        font-family: @font-5;
+//        font-weight: 400;
+//        text-transform: uppercase;
+//    }
+//    > .block > .details > .text.-price {
+//        font-family: @font-5;
+//        font-weight: 400;
+//        text-transform: uppercase;
+//        margin-bottom: 16px;
+//    }
+//    > .block > .details > .title {
+//        font-family: @font-1;
+//        font-weight: 700;
+//        text-transform: uppercase;
+//        margin: 7px 0;
+//    }
+//}
+@media @mobile {
+    .product-item {
+        .display () {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        & {
+            display: flex;
+        }
+        > .box {
+            .display;
+        }
+        > .box > .details {
+            .display;
+        }
+        > .link.-slider {
+            display: flex;
+            align-items: center;
+        }
+        > .link.-slider > .icon {
+            width: 12px;
+            height: 20px;
+        }
+        > .box > .link > .image {
+            width: 60%;
+            display: block;
+            margin: 0 auto;
+        }
+        > .box > .details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        > .box > .details > .text.-brand {
+            font-family: @font-5;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        > .box > .details > .text.-price {
+            font-family: @font-5;
+            font-weight: 400;
+            text-transform: uppercase;
+
+        }
+        > .box > .details > .title {
+            font-family: @font-1;
+            font-weight: 700;
+            font-size: .87rem;
+            text-transform: uppercase;
+            margin: 5px 0;
+        }
+    }
+}
+
+@media @mobile {
+    .product-item {
+        > .box > .link > .image {
+            width: 52.5%;
+        }
+    }
+}

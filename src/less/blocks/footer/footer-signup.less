@@ -1,0 +1,27 @@
+.wrapper.-signup {
+    & {
+        display: flex;
+        flex-direction: column;
+        width: 29%;
+    }
+    > .title {
+        color: @secondary-color;
+
+    }
+    > .text {
+        font-size: .68rem;
+        color: @secondary-color;
+        font-weight: 300;
+        margin: 15px 0 20px;
+    }
+    > .wrap > .input {
+        padding: 11px 18px;
+    }
+    > .wrap > .btn {
+        cursor: pointer;
+        &:hover {
+            color: @primary-color;
+            background-color: @secondary-color;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import 'trending-col';
+@import 'trending-big';
+
+//.block.-content {
+//    display: flex;
+//    margin-top: 15px;
+//}
+
+@media @mobile {
+    .wrapper.-content {
+        & {
+            width: 100%;
+            display: flex;
+            margin-top: 15px;
+        }
+        > .-col {
+            display: none;
+        }
+        > .-big-col {
+            display: none;
+        }
+        > .block:nth-child(-n+3) {
+            display: flex;
+        }
+        > .link.-slider {
+            display: flex;
+            align-items: center;
+        }
+        > .link.-slider > .icon {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+@media @tablet-up {
+    .wrapper.-content {
+        > .item {
+            display: flex;
+        }
+        > .link.-slider {
+            display: none;
+        }
+    }
+}
