@@ -4,20 +4,32 @@
         flex-direction: column;
         width: 29%;
     }
+
     > .title {
         color: @secondary-color;
-
     }
+
     > .text {
         font-size: .68rem;
         color: @secondary-color;
         font-weight: 300;
         margin: 15px 0 20px;
     }
-    > .wrap > .input {
-        padding: 11px 18px;
+
+    > .box {
+        display: flex;
+        justify-content: space-between;
     }
-    > .wrap > .btn {
+
+    > .box > .input {
+        padding: 11px 18px;
+        width: 78.5%;
+        box-sizing: border-box;
+    }
+
+    > .box > .btn {
+        width: 19.8%;
+        text-align: center;
         cursor: pointer;
         &:hover {
             color: @primary-color;

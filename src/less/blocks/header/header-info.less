@@ -9,12 +9,14 @@
         width: 100%;
         box-sizing: border-box;
     }
+
     > .item {
         display: flex;
         align-items: center;
         padding: 7.5px 20px 7.5px 0;
-        font-size: .81rem;
+        font-size: @relative-13;
         color: @secondary-color;
+
         &:last-child {
             padding-right: 0;
         }
@@ -26,36 +28,43 @@
         color: @secondary-color;
         font-family: @font-1;
     }
+
     > .item.-phone > .text {
         font-family: @font-1;
-        font-size: .81rem;
+        font-size: @relative-13;
         font-weight: 400;
     }
+
     > .item.-login > .link > .icon {
         width: 15px;
         height: 15px;
         padding-right: 6px;
         fill: @secondary-color;
     }
+
     > .item > .link > .text {
         color: @secondary-color;
         font-family: @font-1;
-        font-size: .81rem;
+        font-size: @relative-13;
         font-weight: 400;
     }
+
     > .item.-help > .link > .text {
         padding-right: 7px;
     }
+
     > .item.-help > .link > .icon {
         width: 8px;
         height: 5px;
         fill: @secondary-color;
     }
+
     > .item > .link {
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: @secondary-color;
+
         &:hover {
             & .text {
                 color: @color-3;
@@ -72,6 +81,7 @@
         & {
             justify-content: space-around;
         }
+
         > .item {
             padding-right: 0;
         }
@@ -84,6 +94,7 @@
             justify-content: flex-end;
             padding-right: 18px;
         }
+
         > .item {
             padding-right: 20px;
         }

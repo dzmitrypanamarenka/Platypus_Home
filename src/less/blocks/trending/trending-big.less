@@ -27,22 +27,25 @@
     .item.-big-col {
         & {
             display: flex;
-            align-items: flex-start;
             flex-wrap: wrap;
-            padding-right: 8px;
+            align-items: flex-start;
+            justify-content: space-between;
             width: 66%;
+            padding-bottom: 6.7px;
         }
         &:last-child {
             margin-right: 0;
         }
         > .link {
-            width: 49%;
+            width: 47%;
+            margin-right: 6.7px;
         }
         > .link > .image {
             display: block;
             width: 100%;
         }
         > .product-item {
+            align-self: flex-end;
         }
         > .product-item > .link.-slider > .icon {
             display: none;
