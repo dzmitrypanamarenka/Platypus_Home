@@ -56,14 +56,17 @@
 
         & {
             display: flex;
+            width: 100%;
         }
 
         > .box {
             .display;
+            box-sizing: border-box;
         }
 
         > .box > .details {
             .display;
+            word-wrap: break-word;
         }
 
         > .link.-slider {
@@ -86,27 +89,40 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
         }
 
         > .box > .details > .text.-brand {
             font-family: @font-5;
             font-weight: 400;
             text-transform: uppercase;
+            margin-top: 8px;
         }
 
         > .box > .details > .text.-price {
             font-family: @font-5;
             font-weight: 400;
             text-transform: uppercase;
-
         }
 
         > .box > .details > .title {
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            color: @primary-color;
             font-family: @font-1;
             font-weight: 700;
             font-size: @relative-14;
             text-transform: uppercase;
-            margin: 5px 0;
+            text-align: center;
+            margin: 0 10px 6px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            &:hover {
+                color: @color-3;
+            }
         }
     }
 }
@@ -116,5 +132,33 @@
         > .box > .link > .image {
             width: 52.5%;
         }
+    }
+}
+
+@media @desktop-up {
+    .product-item {
+        > .box {
+            justify-content: center;
+        }
+        > .box > .link > .image {
+            width: 62.5%;
+            height: 100%;
+        }
+        > .box > .link {
+            display: flex;
+        }
+        > .box > .details {
+            margin-top: 2%;
+        }
+        > .box > .details > .title {
+            font-size: @relative-18;
+        }
+        > .box > .details > .text.-brand {
+            font-size: @font-size;
+        }
+        > .box > .details > .text.-price {
+            font-size: @font-size;
+        }
+
     }
 }
