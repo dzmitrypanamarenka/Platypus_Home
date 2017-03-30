@@ -1,34 +1,71 @@
-.instagram-wrap {
-    & {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
+//.instagram-wrap {
+//    & {
+//        display: flex;
+//        justify-content: space-between;
+//        align-items: flex-end;
+//    }
+//
+//    > .box {
+//        color: @secondary-color;
+//        font-family: @font-2;
+//    }
+//
+//    > .box.-like {
+//        display: flex;
+//        align-items: center;
+//        padding: 0 0 18px 15px;
+//    }
+//
+//    > .box.-like > .image {
+//        display: inline-block;
+//        margin-right: 7px;
+//    }
+//
+//    > .box.-comment {
+//        display: flex;
+//        align-items: center;
+//        padding: 0 17px 18px 0;
+//    }
+//
+//    > .box.-comment > .image {
+//        display: inline-block;
+//        margin-right: 7px;
+//    }
+//}
 
-    > .box {
-        color: @secondary-color;
-        font-family: @font-2;
-    }
+@media @mobile {
+    .instagram-wrap {
+        & {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            background-color: @secondary-color;
+            padding: 10px;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
 
-    > .box.-like {
-        display: flex;
-        align-items: center;
-        padding: 0 0 18px 15px;
-    }
+        > .img {
+            display: block;
+            width: 100%;
+        }
 
-    > .box.-like > .image {
-        display: inline-block;
-        margin-right: 7px;
-    }
+        > .box {
+            display: flex;
+            align-items: center;
+            color: @secondary-color;
+            font-family: @font-2;
+            position: absolute;
+            top: 80%;
+            transform: translate(-50%, -50%);
+        }
 
-    > .box.-comment {
-        display: flex;
-        align-items: center;
-        padding: 0 17px 18px 0;
-    }
+        > .box.-like {
+            left: 30%;
+        }
 
-    > .box.-comment > .image {
-        display: inline-block;
-        margin-right: 7px;
+        > .box.-comment {
+            left: 70%;
+        }
     }
 }
