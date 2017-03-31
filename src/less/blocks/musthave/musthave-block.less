@@ -42,19 +42,29 @@
         > .wrapper.-instagram {
             order: 3;
         }
-        //> article {
-        //    margin-right: 100px;
-        //}
-        //> .wrapper.-instagram {
-        //    align-self: flex-end;
-        //    padding-bottom: 205px;
-        //}
-        //> .product-item.-small {
-        //    align-self: flex-start;
-        //    padding-top: 95px;
-        //}
-        //> .product-item.-big {
-        //    padding-bottom: 30px;
-        //}
+    }
+}
+
+@media @big-mobile-up {
+    .musthave-block {
+        & {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+    }
+}
+
+@media @desktop-up {
+    .musthave-block {
+        & {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        > .wrapper.-instagram {
+            order: 0;
+        }
     }
 }

@@ -20,14 +20,30 @@
 @media @mobile {
     .product-item.-small {
         & {
-            width: 100%;
-            margin: 5% 0;
+            position: relative;
+            width: 50%;
+            margin: 6% 0;
+
+            &::before {
+                position: absolute;
+                top: 5px;
+                right: -5px;
+                bottom: 10px;
+                left: 0;
+                z-index: 0;
+                border: 1px solid white;
+                content: '';
+                -webkit-transform: rotate(-9deg);
+                -ms-transform: rotate(-9deg);
+                transform: rotate(-9deg);
+            }
         }
         > .box {
-            width: 50%;
             background-color: @secondary-color;
-            padding: 0 10px;
-            margin: auto;
+            margin: 0 auto;
+            display: flex;
+            box-sizing: border-box;
+            max-width: 254px;
         }
         > .box > .details > .btn {
             width: 110px;
@@ -35,7 +51,7 @@
             line-height: 35px;
             font-size: .7rem;
             color: @color-3;
-            margin: 2% 0 15%;
+            margin: 2% 0 11%;
             border: 2px solid @color-3;
             &:hover {
                 color: @secondary-color;
@@ -43,8 +59,67 @@
             }
         }
 
+        > .box > .link > .image {
+            width: 100%;
+        }
         > .box > .link {
+            display: flex;
+            align-items: flex-end;
+            background-color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        > .box > .details {
+            background-color: @secondary-color;
+            padding: 10px;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+    }
+}
 
+@media @big-mobile-up {
+    .product-item.-small {
+        & {
+            width: 42%;
+            margin: 0;
+            margin-top: 25px;
+        }
+    }
+    > .box {
+        max-width: none;
+    }
+}
+
+@media @desktop-up {
+    .product-item.-small {
+        & {
+            width: auto;
+            align-self: flex-start;
+            margin-left: 6.5%;
+            margin-top: 4.8%;
+        }
+        > .box {
+            padding: 0 5px;
+        }
+        > .box > .details > .btn {
+            width: 159px;
+            height: 44px;
+            font-size: .88rem;
+            line-height: 44px;
+        }
+        > .box > .details > .title {
+            font-size: @relative-13;
+        }
+        > .box > .details {
+            padding: 10px 0;
+        }
+        > .box > .link {
+            padding: 10px 0;
+        }
+        > .box > .details > .text.-price {
+            margin-bottom: 5px;
         }
     }
 }

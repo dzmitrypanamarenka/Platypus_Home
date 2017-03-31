@@ -40,9 +40,13 @@
             display: flex;
             align-items: flex-end;
             background-color: @secondary-color;
-            padding: 10px;
+            padding: 10px 10px 0;
             box-sizing: border-box;
             margin: 0 auto;
+
+            &:last-child {
+                padding-bottom: 10px;
+            }
         }
 
         > .img {
@@ -56,16 +60,39 @@
             color: @secondary-color;
             font-family: @font-2;
             position: absolute;
-            top: 80%;
             transform: translate(-50%, -50%);
+            font-size: @relative-14;
         }
 
-        > .box.-like {
-            left: 30%;
+        > .box > .image {
+            margin-right: 10%;
         }
 
-        > .box.-comment {
-            left: 70%;
+        &:first-child > .box.-like {
+            top: 90%;
+            left: 20%;
+        }
+
+        &:first-child > .box.-comment {
+            top: 90%;
+            left: 82%;
+        }
+        &:last-child > .box.-like {
+            top: 88%;
+            left: 20%;
+        }
+
+        &:last-child > .box.-comment {
+            top: 88%;
+            left: 82%;
+        }
+    }
+}
+
+@media @desktop-up {
+    .instagram-wrap {
+        > .text {
+            font-size: @relative-12;
         }
     }
 }

@@ -1,17 +1,5 @@
 //.wrapper.-instagram {
-//    //&::before {
-//    //    position: absolute;
-//    //    top: 5px;
-//    //    right: -5px;
-//    //    bottom: 10px;
-//    //    left: 0;
-//    //    z-index: 0;
-//    //    border: 1px solid white;
-//    //    content: '';
-//    //    -webkit-transform: rotate(-9deg);
-//    //    -ms-transform: rotate(-9deg);
-//    //    transform: rotate(-9deg);
-//    //}
+
 //    > .box.-caption {
 //        display: flex;
 //        align-items: center;
@@ -62,9 +50,25 @@
         & {
             width: 50%;
             margin: 0 auto;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                top: 5px;
+                right: -5px;
+                bottom: 10px;
+                left: 0;
+                z-index: 0;
+                border: 1px solid white;
+                content: '';
+                -webkit-transform: rotate(-9deg);
+                -ms-transform: rotate(-9deg);
+                transform: rotate(-9deg);
+            }
         }
         > .box.-caption {
             display: flex;
+            font-size: @relative-14;
             align-items: center;
             justify-content: center;
             text-transform: uppercase;
@@ -77,18 +81,48 @@
             }
         }
         > .box.-caption > .icon {
-            width: 20px;
-            height: 20px;
+            width: 15px;
+            height: 15px;
             fill: currentColor; //need fix
         }
         > .box.-instagram {
-            margin: 0 auto;
+            margin: 10px auto 0;
             display: flex;
             flex-wrap: wrap;
             box-sizing: border-box;
-            margin-top: 10px;
         }
-        > .box.-instagram > .instagram-wrap {
+    }
+}
+
+@media @big-mobile-up {
+    .wrapper.-instagram {
+        & {
+            width: 42%; //38%
+            margin: 0;
+        }
+    }
+}
+
+@media @desktop-up {
+    .wrapper.-instagram {
+        & {
+            width: auto;
+            align-self: flex-end;
+            margin-bottom: 12.42%;
+            margin-left: 15.8%;
+        }
+        > .box.-instagram {
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+        > .box.-caption {
+            font-size: @font-size;
+            justify-content: flex-start;
+        }
+        > .box.-caption > .icon {
+            width: 20px;
+            height: 20px;
+            padding-right: 2%;
         }
     }
 }
