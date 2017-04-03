@@ -1,24 +1,83 @@
-.wrap.-input {
-    & {
-        display: flex;
-        justify-content: space-between;
-        width: 628px;
-        margin-bottom: 12px;
-    }
+//.wrap.-input {
+//    & {
+//        display: flex;
+//        justify-content: space-between;
+//        width: 628px;
+//        margin-bottom: 12px;
+//    }
+//
+//    > .input {
+//        width: 78.5%;
+//        box-sizing: border-box;
+//    }
+//
+//    > .btn {
+//        width: 19.8%;
+//        text-align: center;
+//        padding-top: 3%;
+//        cursor: pointer;
+//        &:hover {
+//            color: @primary-color;
+//            background-color: @secondary-color;
+//        }
+//    }
+//}
 
-    > .input {
-        width: 78.5%;
-        box-sizing: border-box;
-    }
+@media @mobile {
+    .wrap.-input {
+        & {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
 
-    > .btn {
-        width: 19.8%;
-        text-align: center;
-        padding-top: 3%;
-        cursor: pointer;
-        &:hover {
-            color: @primary-color;
-            background-color: @secondary-color;
+        > .input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        > .btn {
+            width: 159px;
+            height: 44px;
+            background-color: transparent;
+            font-size: .88rem;
+            line-height: 44px;
+            margin: 3% auto;
+            text-align: center;
+            cursor: pointer;
+            &:hover {
+                color: @primary-color;
+                background-color: @secondary-color;
+            }
+        }
+    }
+}
+
+@media @tablet-up {
+    .wrap.-input {
+        & {
+            width: 55%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        > .input {
+            width: 78.5%;
+        }
+
+        > .btn {
+            width: 19.8%;
+            height: auto;
+            margin: 0;
+            line-height: normal;
+        }
+    }
+}
+
+@media @desktop-up {
+    .wrap.-input {
+        & {
+            width: 32.6%;
         }
     }
 }

@@ -1,39 +1,128 @@
-.banner.-find {
-    & {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        background-image: url('../../img/findstore-bgs.png');
-        background-repeat: no-repeat;
-        width: 628px;
-        min-height: 167px;
-        border: 1px solid @color-3;
-        box-sizing: border-box;
+//.banner.-find {
+//    & {
+//        display: flex;
+//        flex-direction: column;
+//        justify-content: center;
+//        align-items: flex-end;
+//        background-image: url('../../img/findstore-bgs.png');
+//        background-repeat: no-repeat;
+//        width: 628px;
+//        min-height: 167px;
+//        border: 1px solid @color-3;
+//        box-sizing: border-box;
+//    }
+//    > .title {
+//        font-size: 2.06rem;
+//        color: @color-3;
+//        padding-top: 20px;
+//        padding-right: 24px;
+//    }
+//    > .text {
+//        color: @secondary-color;
+//        font-size: @relative-12;
+//        margin: 0;
+//        padding: 12px 24px 0 0;
+//        line-height: normal;
+//        text-align: right;
+//        font-weight: 400;
+//        font-family: @font-2;
+//    }
+//    > .link {
+//        text-transform: uppercase;
+//        text-decoration: underline;
+//        color: @color-3;
+//        font-size: @relative-13;
+//        font-family: @font-1;
+//        font-weight: 700;
+//        padding: 15px 24px 26px 0;
+//    }
+//}
+
+@media @mobile {
+    .banner.-find {
+        & {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            background-image: url('../../img/findstore-bgs.png');
+            background-repeat: no-repeat;
+            border: 1px solid @color-3;
+            box-sizing: border-box;
+            padding: 1% 0;
+        }
+        > .title {
+            font-size: 1.5rem;
+            color: @color-3;
+            margin: 0 auto;
+        }
+        > .text {
+            color: @secondary-color;
+            font-size: @relative-12;
+            margin: 3% 0;
+            width: 50%;
+            text-align: center;
+            align-self: flex-end;
+            line-height: normal;
+            font-weight: 400;
+            font-family: @font-2;
+        }
+        > .link {
+            margin: 3% 0;
+            align-self: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: @color-3;
+            font-size: @relative-13;
+            font-family: @font-1;
+            font-weight: 700;
+        }
     }
-    > .title {
-        font-size: 2.06rem;
-        color: @color-3;
-        padding-top: 20px;
-        padding-right: 24px;
+}
+
+@media @tablet-up {
+    .banner.-find {
+        & {
+            width: 55%;
+            margin: 3% auto 0;
+        }
+
+        > .title {
+            margin: 3% 3% 0 0;
+            align-self: flex-end;
+        }
+
+        > .link {
+            margin: 0 3% 3% 0;
+            align-self: flex-end;
+        }
+
+        > .text {
+            margin: 3%;
+        }
     }
-    > .text {
-        color: @secondary-color;
-        font-size: @relative-12;
-        margin: 0;
-        padding: 12px 24px 0 0;
-        line-height: normal;
-        text-align: right;
-        font-weight: 400;
-        font-family: @font-2;
-    }
-    > .link {
-        text-transform: uppercase;
-        text-decoration: underline;
-        color: @color-3;
-        font-size: @relative-13;
-        font-family: @font-1;
-        font-weight: 700;
-        padding: 15px 24px 26px 0;
+}
+
+@media @desktop-up {
+    .banner.-find {
+        & {
+            width: 32.6%;
+            margin: .5% auto 0;
+        }
+
+        > .title {
+            font-size: 2.06rem;
+            margin: 3.5% 5% 0 0;
+        }
+
+        > .link {
+            margin: 0 5% 3% 0;
+        }
+
+        > .text {
+            margin: 1.4% 5%;
+            text-align: right;
+        }
     }
 }

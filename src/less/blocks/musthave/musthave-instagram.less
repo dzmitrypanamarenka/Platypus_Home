@@ -52,19 +52,19 @@
             margin: 0 auto;
             position: relative;
 
-            &::before {
-                position: absolute;
-                top: 5px;
-                right: -5px;
-                bottom: 10px;
-                left: 0;
-                z-index: 0;
-                border: 1px solid white;
-                content: '';
-                -webkit-transform: rotate(-9deg);
-                -ms-transform: rotate(-9deg);
-                transform: rotate(-9deg);
-            }
+            //&::before {
+            //    position: absolute;
+            //    top: 5%;
+            //    right: 0;
+            //    bottom: 10px;
+            //    left: 0;
+            //    z-index: 0;
+            //    border: 1px solid white;
+            //    content: '';
+            //    -webkit-transform: rotate(-9deg);
+            //    -ms-transform: rotate(-9deg);
+            //    transform: rotate(-9deg);
+            //}
         }
         > .box.-caption {
             display: flex;
@@ -98,7 +98,14 @@
     .wrapper.-instagram {
         & {
             width: 42%; //38%
-            margin: 0;
+            margin: 0 0 2%;
+
+            //&::before {
+            //    top: 25px;
+            //    right: 32px;
+            //    bottom: 0;
+            //    left: 32px;
+            //}
         }
     }
 }
@@ -108,8 +115,8 @@
         & {
             width: auto;
             align-self: flex-end;
-            margin-bottom: 12.42%;
-            margin-left: 15.8%;
+            margin-bottom: 10.6%;
+            margin-left: 7.9%;
         }
         > .box.-instagram {
             flex-wrap: nowrap;
@@ -122,7 +129,15 @@
         > .box.-caption > .icon {
             width: 20px;
             height: 20px;
-            padding-right: 2%;
+            padding-right: 3%;
+        }
+    }
+}
+
+@media @big-desktop {
+    .wrapper.-instagram {
+        & {
+            margin-left: 13%;
         }
     }
 }

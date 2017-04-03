@@ -1,50 +1,112 @@
 @import 'findstore-banner';
 @import 'findstore-search';
 
-.findstore-wrapper {
-    & {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-image: url('../../img/findstore-bgl.png');
-        background-repeat: no-repeat;
-        width: 100%;
-        min-height: 405px;
-    }
-    > .title {
-        color: @secondary-color;
-        margin: 25px 0;
-    }
-    > .wrap.-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-self: flex-end;
-        text-transform: uppercase;
-        color: @secondary-color;
-        padding-right: 3.64%;
-        margin-bottom: 20px;
-    }
-    > .wrap.-info > .-subtitle {
-        font-weight: 700;
-        font-family: @font-1;
-        font-size: .88rem;
-        padding-left: 7px;
-    }
-    > .wrap.-info > .link {
-        display: flex;
-        justify-content: flex-end;
-        color: @secondary-color;
-    }
-    > .wrap.-info > .link > .text {
-        font-family: @font-0;
-        font-size: .68rem;
-        padding-right: 9px;
-    }
+//.findstore-wrapper {
+//    & {
+//        display: flex;
+//        flex-direction: column;
+//        justify-content: center;
+//        align-items: center;
+//        background-image: url('../../img/findstore-bgl.png');
+//        background-repeat: no-repeat;
+//        width: 100%;
+//        min-height: 405px;
+//    }
+//    > .title {
+//        color: @secondary-color;
+//        margin: 25px 0;
+//    }
+//    > .wrap.-info {
+//        display: flex;
+//        flex-direction: column;
+//        justify-content: flex-end;
+//        align-self: flex-end;
+//        text-transform: uppercase;
+//        color: @secondary-color;
+//        padding-right: 3.64%;
+//        margin-bottom: 20px;
+//    }
+//    > .wrap.-info > .-subtitle {
+//        font-weight: 700;
+//        font-family: @font-1;
+//        font-size: .88rem;
+//        padding-left: 7px;
+//    }
+//    > .wrap.-info > .link {
+//        display: flex;
+//        justify-content: flex-end;
+//        color: @secondary-color;
+//    }
+//    > .wrap.-info > .link > .text {
+//        font-family: @font-0;
+//        font-size: .68rem;
+//        padding-right: 9px;
+//    }
+//
+//    > .wrap.-info > .link > .image {
+//        width: 11px;
+//        height: 11px;
+//    }
+//}
 
-    > .wrap.-info > .link > .image {
-        width: 11px;
-        height: 11px;
+@media @mobile {
+    .findstore-wrapper {
+        & {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('../../img/findstore-bgl.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        > .title {
+            color: @secondary-color;
+            margin: 25px 0;
+        }
+        > .wrap.-info {
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-transform: uppercase;
+            color: @secondary-color;
+            margin: 3% 0;
+        }
+        > .wrap.-info > .-subtitle {
+            font-weight: 700;
+            font-family: @font-1;
+            font-size: .88rem;
+            padding-left: 7px;
+        }
+        > .wrap.-info > .link {
+            display: flex;
+            justify-content: flex-end;
+            color: @secondary-color;
+        }
+        > .wrap.-info > .link > .text {
+            font-family: @font-0;
+            font-size: .68rem;
+            padding-right: 9px;
+        }
+
+        > .wrap.-info > .link > .image {
+            width: 11px;
+            height: 11px;
+        }
+    }
+}
+
+@media @desktop-up {
+    .findstore-wrapper {
+        & {
+
+        }
+
+        > .title {
+            margin: 2.3% 0 1.3%;
+        }
     }
 }
