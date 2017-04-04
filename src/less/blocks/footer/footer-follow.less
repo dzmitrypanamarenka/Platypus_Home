@@ -1,69 +1,227 @@
-.wrapper.-follow {
-    & {
-        display: flex;
-        flex-direction: column;
-        width: 25%;
-    }
-    > .wrap {
-        display: flex;
-        justify-content: space-between;
-        color: @secondary-color;
-    }
-    > .wrap > .text {
-        font-family: @font-4;
-        line-height: 4.6rem;
-        font-size: 3.09rem;
-        width: 48%;
-        margin: 0;
-        text-align: center;
-    }
-    > .wrap > .block {
-        width: 48%;
-    }
-    > .wrap > .block > .text {
-        font-family: @font-0;
-        font-size: .68rem;
-        line-height: 1.8rem;
-        margin: 0;
-    }
-    > .social {
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-        padding: 0;
-    }
-    > .social > .item {
-        display: flex;
-        background-color: #1a1a1a;
-        width: 30%;
-        min-height: 43px;
-    }
-    > .social > .item > .link {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        &:hover {
-            background-color: #e6e6e6;
-            color: @primary-color;
+//.wrapper.-follow {
+//    & {
+//        display: flex;
+//        flex-direction: column;
+//    }
+//    > .wrap {
+//        display: flex;
+//        justify-content: space-between;
+//        color: @secondary-color;
+//    }
+//    > .wrap > .text {
+//        font-family: @font-4;
+//        line-height: 4.6rem;
+//        font-size: 3.09rem;
+//        width: 48%;
+//        margin: 0;
+//        text-align: center;
+//    }
+//    > .wrap > .box {
+//        width: 48%;
+//    }
+//    > .wrap > .box > .text {
+//        font-family: @font-0;
+//        font-size: .68rem;
+//        line-height: 1.8rem;
+//        margin: 0;
+//    }
+//    > .social {
+//        display: flex;
+//        justify-content: space-between;
+//        margin: 0;
+//        padding: 0;
+//    }
+//    > .social > .item {
+//        display: flex;
+//        background-color: #1a1a1a;
+//        width: 30%;
+//        min-height: 43px;
+//    }
+//    > .social > .item > .link {
+//        display: flex;
+//        width: 100%;
+//        align-items: center;
+//        justify-content: center;
+//        &:hover {
+//            background-color: #e6e6e6;
+//            color: @primary-color;
+//        }
+//        &:hover > .text {
+//            color: @primary-color;
+//        }
+//        &:hover > .icon {
+//            fill: @primary-color;
+//        }
+//    }
+//    > .social > .item > .icon {
+//        fill: @secondary-color;
+//        width: 21px;
+//        height: 21px;
+//        margin-right: 15px;
+//    }
+//    > .social > .item > .text {
+//        color: @secondary-color;
+//        font-family: @font-5;
+//        font-weight: 400;
+//        font-size: @relative-14;
+//    }
+//}
+
+@media @mobile {
+    .wrapper.-follow {
+        & {
+            display: flex;
+            flex-direction: column;
+            margin: 5% 0;
         }
-        &:hover > .text {
-            color: @primary-color;
+
+        > .wrap {
+            display: flex;
+            justify-content: space-between;
+            color: @secondary-color;
+            padding: 0 .5%;
+            margin-bottom: 1%;
         }
-        &:hover > .icon {
-            fill: @primary-color;
+
+        > .wrap > .text {
+            font-family: @font-4;
+            line-height: 4.6rem;
+            font-size: 2.5rem;
+            width: 48%;
+            margin: 0;
+            text-align: center;
+        }
+
+        > .wrap > .box {
+            width: 48%;
+            margin-top: 16px;
+        }
+
+        > .wrap > .box > .title {
+            font-size: 22px;
+        }
+
+        > .wrap > .box > .text {
+            font-family: @font-0;
+            font-size: .68rem;
+            line-height: 1.8rem;
+            margin: 0;
+            text-align: left;
+        }
+
+        > .social {
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+        }
+
+        > .social > .item {
+            display: flex;
+            background-color: #1a1a1a;
+            width: 30%;
+            min-height: 43px;
+        }
+
+        > .social > .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                background-color: #e6e6e6;
+                color: @primary-color;
+            }
+            &:hover > .text {
+                color: @primary-color;
+            }
+            &:hover > .icon {
+                fill: @primary-color;
+            }
+        }
+
+        > .social > .item > .icon {
+            fill: @secondary-color;
+            width: 21px;
+            height: 21px;
+        }
+
+        > .social > .item > .text {
+            color: @secondary-color;
+            font-family: @font-5;
+            font-weight: 400;
+            font-size: @relative-14;
+            display: none;
         }
     }
-    > .social > .item > .link > .icon {
-        fill: @secondary-color;
-        width: 21px;
-        height: 21px;
-        margin-right: 15px;
+}
+
+@media @big-mobile-up {
+    .wrapper.-follow {
+        & {
+            width: 80%;
+        }
+
+        > .wrap {
+            justify-content: space-around;
+        }
+
+        > .social {
+            width: 80%;
+            align-self: center;
+        }
+
+        > .wrap > .box {
+            width: 40%;
+        }
+
+        > .wrap > .text {
+            width: 40%;
+        }
     }
-    > .social > .item > .link > .text {
-        color: @secondary-color;
-        font-family: @font-5;
-        font-weight: 400;
-        font-size: @relative-14;
+}
+
+@media @tablet-up {
+    .wrapper.-follow {
+        & {
+            width: 55%;
+        }
+
+        > .social {
+            width: 95%;
+        }
+
+        > .social > .item > .text {
+            display: block;
+        }
+
+        > .social > .item > .icon {
+            margin-right: 15px;
+        }
+
+        > .wrap > .box {
+            width: 45%;
+        }
+
+        > .wrap > .text {
+            width: 40%;
+        }
+
+    }
+}
+
+@media @desktop-up {
+    .wrapper.-follow {
+        & {
+            width: 31%;
+            margin: 1.25% 0 0;
+        }
+
+        > .wrap > .box {
+            width: 47%;
+        }
+
+        > .wrap > .text {
+            width: 47%;
+        }
     }
 }
