@@ -212,16 +212,38 @@
 @media @desktop-up {
     .wrapper.-follow {
         & {
-            width: 31%;
-            margin: 1.25% 0 0;
+            max-width: 500px;
+            margin: 2.2% 0 0;
+        }
+
+        > .wrap {
+            margin-bottom: 5.4%;
+            padding: 0;
         }
 
         > .wrap > .box {
-            width: 47%;
+            width: 50%;
+            margin: 0 3.3% 0 0;
         }
 
         > .wrap > .text {
-            width: 47%;
+            width: 50%;
+            font-size: 3.2rem;
+            line-height: 2.9rem;
+        }
+
+        > .wrap > .box > .title {
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        > .wrap > .box > .text {
+            line-height: 1.2rem;
+        }
+
+        > .social {
+            width: 90%;
+            margin-right: 3%;
         }
     }
 }
