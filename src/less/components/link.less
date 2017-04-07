@@ -1,0 +1,28 @@
+.link {
+    color: currentColor;
+    line-height: inherit;
+    font-weight: 400;
+
+    &.-nav {
+        display: flex;
+        align-items: center;
+        font-family: @font-1;
+        white-space: nowrap;
+        box-sizing: border-box;
+
+        &:hover {
+            background-color: @color-3;
+        }
+    }
+
+    &.-slider {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+
+        & .icon {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

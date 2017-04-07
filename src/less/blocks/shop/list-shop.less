@@ -3,8 +3,6 @@
         & {
             display: flex;
             flex-direction: column;
-            margin: 0;
-            padding: 0;
             width: 100%;
             overflow: hidden;
         }
@@ -37,16 +35,10 @@
             left: 50%;
             transform: translate(-50%, -50%);
             position: absolute;
-            color: @secondary-color;
             border: 1px solid @secondary-color;
             font-weight: 400;
             font-size: @relative-12;
             font-family: @font-1;
-
-            &:hover {
-                color: @primary-color;
-                background-color: @secondary-color;
-            }
         }
     }
 }
@@ -73,7 +65,7 @@
 
         > .item > .btn {
             font-size: @relative-14;
-            border: 2px solid @secondary-color;
+            border: @border-secondary;
         }
     }
 }

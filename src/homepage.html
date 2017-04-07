@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 <script async src="js/svg-sprite.js"></script>
@@ -13,74 +14,60 @@
 <div class="container">
     <header class="header-block">
         <section class="info-block">
-            <div class="item -phone">
+            <div class="box -phone">
                 <span class="text">Customer Care:</span>
                 <a href="tel:1800 820 851" class="link">1800 820 851</a>
             </div>
-            <div class="item -help">
-                <a href="#" class="link">
-                    <span class="text">Need Help?</span>
-                    <svg class="icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-header-arr"></use>
-                    </svg>
-                </a>
-            </div>
-            <div class="item -login">
-                <a href="#" class="link">
-                    <svg class="icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-header-login"></use>
-                    </svg>
-                    <span class="text">Login</span>
-                </a>
-            </div>
+            <a href="#" class="link -nav -help">
+                <span class="text">Need Help?</span>
+                <svg class="icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-header-arr"></use>
+                </svg>
+            </a>
+            <a href="#" class="link -nav -login">
+                <svg class="icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-header-login"></use>
+                </svg>
+                <span class="text">Login</span>
+            </a>
         </section>
         <section class="nav-block">
-            <div class="item -menu">
-                <a href="#" class="link">
-                    <svg class="icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-header-menu"></use>
-                    </svg>
-                    <span class="text">menu</span>
-                </a>
-            </div>
-            <div class="item -logo">
+            <a href="#" class="link -nav -menu">
+                <svg class="icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-header-menu"></use>
+                </svg>
+                <span class="text">menu</span>
+            </a>
+            <div class="box -logo">
                 <svg class="icon ">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-header-logo"></use>
                 </svg>
             </div>
-            <div class="item -cart">
-                <a href="" class="link">
+            <a href="" class="link -nav -cart">
+                <svg class="icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-header-cart"></use>
+                </svg>
+            </a>
+            <div class="nav-wrap">
+                <a href="#" class="link -nav -locator">
                     <svg class="icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-header-cart"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-header-locator"></use>
                     </svg>
+                    <span class="text">store locator</span>
+                </a>
+                <a href="#" class="link -nav -search">
+                    <svg class="icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-header-search"></use>
+                    </svg>
+                    <span class="text">search</span>
+                </a>
+                <a href="#" class="link -nav -list">
+                    <svg class="icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-header-list"></use>
+                    </svg>
+                    <span class="text">list</span>
                 </a>
             </div>
-            <ul class="list -nav">
-                <li class="item -locator">
-                    <a href="#" class="link">
-                        <svg class="icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-header-locator"></use>
-                        </svg>
-                        <span class="text">store locator</span>
-                    </a>
-                </li>
-                <li class="item -search">
-                    <a href="#" class="link">
-                        <svg class="icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-header-search"></use>
-                        </svg>
-                        <span class="text">search</span>
-                    </a>
-                </li>
-                <li class="item -list">
-                    <a href="#" class="link">
-                        <svg class="icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-header-list"></use>
-                        </svg>
-                        <span class="text">list</span>
-                    </a>
-                </li>
-            </ul>
         </section>
     </header>
 
@@ -88,11 +75,11 @@
         <section class="banner-block">
             <a href="#" class="slide -one visually-hidden">
                 <img src="img/banner2.jpg" alt="" class="image">
-                <span class="btn -big">shop now</span>
+                <span class="btn -big -black">shop now</span>
             </a>
             <a href="#" class="slide -two">
                 <img src="img/banner1.jpg" alt="" class="image">
-                <span class="btn -big">shop now</span>
+                <span class="btn -big -black">shop now</span>
             </a>
         </section>
         <section class="benefits-block">
@@ -100,51 +87,51 @@
                 <svg class="icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-benefits-shipping"></use>
                 </svg>
-                <p class="text -adv">free shipping</p>
+                <b class="title -advertise">free shipping</b>
                 <p class="text -desc">on orders<br> over $50</p>
             </div>
             <div class="benefit-item">
                 <svg class="icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-benefits-delivery"></use>
                 </svg>
-                <p class="text -adv">fast delivery</p>
+                <b class="title -advertise">fast delivery</b>
                 <p class="text -desc">australia<br> wide</p>
             </div>
             <div class="benefit-item">
                 <svg class="icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-benefits-global"></use>
                 </svg>
-                <p class="text -adv">global</p>
+                <b class="title -advertise">global</b>
                 <p class="text -desc">sneakers<br> brands</p>
             </div>
             <div class="benefit-item">
                 <svg class="icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-benefits-over"></use>
                 </svg>
-                <p class="text -adv">over 60</p>
+                <b class="title -advertise">over 60</b>
                 <p class="text -desc">platypus<br> stores</p>
             </div>
         </section>
         <section class="shop-block">
             <a href="#" class="item -men">
                 <img src="../img/shoplist-men.png" alt="" class="image">
-                <span class="btn -med">shop men</span>
+                <span class="btn -med -white">shop men</span>
             </a>
             <a href="#" class="item -women">
                 <img src="../img/shoplist-women.png" alt="" class="image">
-                <span class="btn -med">shop women</span>
+                <span class="btn -med -white">shop women</span>
             </a>
             <a href="#" class="item -kids">
                 <img src="../img/shoplist-kids.png" alt="" class="image">
-                <span class="btn -med">shop kids</span>
+                <span class="btn -med -white">shop kids</span>
             </a>
             <a href="#" class="item -sale">
                 <img src="../img/shoplist-sale.png" alt="" class="image">
-                <span class="btn -med">shop sale</span>
+                <span class="btn -med -white">shop sale</span>
             </a>
         </section>
         <section class="brands-block">
-            <a href="" class="link">
+            <a href="" class="link -slider">
                 <img src="../img/trending-arr-left.png" alt="" class="image">
             </a>
             <div class="item">
@@ -189,7 +176,7 @@
             <div class="item">
                 <a href="" class="link"><img src="img/brand-timberland.png" alt="" class="image"></a>
             </div>
-            <a href="" class="link">
+            <a href="" class="link -slider">
                 <img src="../img/trending-arr-right.png" alt="" class="image">
             </a>
         </section>
@@ -197,9 +184,9 @@
             <div class="nav -add">
                 <b class="title -huge">trending now</b>
                 <div class="box">
-                    <a href="" class="btn -small">Men</a>
-                    <a href="" class="btn -small">Women</a>
-                    <a href="" class="btn -small">Kids</a>
+                    <a href="" class="btn -small -black">Men</a>
+                    <a href="" class="btn -small -black">Women</a>
+                    <a href="" class="btn -small -black">Kids</a>
                 </div>
             </div>
             <div class="wrapper -content">
@@ -376,7 +363,7 @@
                         <span class="text -brand">nike</span>
                         <a href="#" class="title -normal">men's roshe one premium</a>
                         <span class="text -price">$120</span>
-                        <a href="" class="btn -med">shop now</a>
+                        <a href="" class="btn -med -turq">shop now</a>
                     </div>
                 </div>
             </article>
@@ -389,7 +376,7 @@
                         <span class="text -brand">nike</span>
                         <a href="#" class="title">women's roshe one</a>
                         <span class="text -price">$120</span>
-                        <a href="" class="btn -med _turq">shop now</a>
+                        <a href="" class="btn -med -turq">shop now</a>
                     </div>
                 </div>
             </article>
@@ -397,15 +384,15 @@
         <section class="exclusive-block">
             <a href="#" class="item">
                 <img src="../../img/exclusive-pic1.png" alt="" class="image">
-                <span class="btn -med">limited edition</span>
+                <span class="btn -med -white">limited edition</span>
             </a>
             <a href="#" class="item">
                 <img src="../../img/exclusive-pic2.png" alt="" class="image">
-                <span class="btn -med">blog</span>
+                <span class="btn -med -white">blog</span>
             </a>
             <a href="#" class="item">
                 <img src="../../img/exclusive-pic3.png" alt="" class="image">
-                <span class="btn -med">retro</span>
+                <span class="btn -med -white">retro</span>
             </a>
         </section>
         <section class="findstore-wrapper">
@@ -413,7 +400,7 @@
 
             <form class="wrap -input">
                 <input class="input" type="text" placeholder="Suburb or Postcode">
-                <button class="btn -med">find</button>
+                <button class="btn -med -white">find</button>
             </form>
 
             <div class="banner -find">
@@ -474,7 +461,7 @@
                 <p class="text">Sign up to receive must-have style news, updates and promotions before anyone else</p>
                 <form class="box -input">
                     <input class="input" type="text" placeholder="Enter your email adress for updates">
-                    <button class="btn -med">sign up</button>
+                    <button class="btn -med -white">sign up</button>
                 </form>
             </section>
             <section class="wrapper -follow">

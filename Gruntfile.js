@@ -1,13 +1,14 @@
 module.exports = function (grunt) {
     require("load-grunt-tasks")(grunt);
 
-
     grunt.initConfig({
         less: {
             style: {
                 files: {
-                    "dist/css/style.css": "src/less/style.less",
-                    'dist/css/fonts.css': 'src/less/fonts.less'
+                    'dist/css/style.css': 'src/less/style.less',
+                    'dist/css/fonts.css': 'src/less/fonts.less',
+                    'dist/css/homepage.css': 'src/less/homepage.less',
+                    'dist/css/product-detail.css': 'src/less/product-detail.less'
                 }
             }
         },
@@ -72,7 +73,9 @@ module.exports = function (grunt) {
         csscomb: {
             foo: {
                 files: {
-                    'dist/css/style.css': ['dist/css/style.css']
+                    'dist/css/style.css': ['dist/css/style.css'],
+                    'dist/css/homepage.css': ['dist/css/homepage.css'],
+                    'dist/css/product-detail.css': ['dist/css/product-detail.css']
                 }
             }
         },

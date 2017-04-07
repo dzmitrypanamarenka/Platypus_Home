@@ -1,116 +1,71 @@
+@import 'nav-wrap';
+
+@header-nav-primary-color: @secondary-color;
+@header-nav-background-color: @primary-color;
+@header-nav-hover-color: @color-3;
+
 @media @mobile {
     .nav-block {
         & {
-            background-color: @primary-color;
+            background-color: @header-nav-background-color;
             display: flex;
             justify-content: flex-end;
             align-items: center;
             flex-wrap: wrap;
             width: 100%;
             box-sizing: border-box;
+            color: @header-nav-primary-color;
         }
+
         .icon {
             fill: @secondary-color;
             width: 26px;
             height: 25px;
         }
 
-        .link {
-            font-family: @font-1;
-            font-weight: 400;
-            color: @secondary-color;
-            white-space: nowrap;
-            line-height: inherit;
-        }
-
-        > .item.-logo {
+        > .box.-logo {
             position: absolute;
             top: 38%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
 
-        > .item.-logo > .icon {
+        > .box.-logo > .icon {
             height: 34px;
             width: 175px;
-            fill: @secondary-color;
+            fill: @header-nav-primary-color;
         }
 
-        > .item.-logo > .icon > .st1 {
+        > .box.-logo > .icon > .st1 {
             fill: @color-3;
         }
 
-        > .item.-menu {
-            display: flex;
-            align-items: center;
+        > .link.-nav.-menu {
             padding: 0 20px;
             margin-right: auto;
-            min-height: 57px;
-            cursor: pointer;
-
-            &:hover {
-                background-color: @color-3;
-            }
-        }
-
-        > .item.-menu > .link {
-            display: flex;
             padding-top: 4px;
             flex-direction: column;
+            min-height: 57px;
             justify-content: center;
-            align-items: center;
         }
 
-        > .item.-cart {
-            display: flex;
-            align-items: center;
+        > .link.-nav.-cart {
             padding: 0 25px;
             height: @def-height;
             background-color: @color-3;
-            box-sizing: border-box;
             margin-bottom: 1px;
-            cursor: pointer;
             min-height: 57px;
         }
 
-        > .list {
-            display: flex;
+        > .nav-wrap {
             width: 100%;
-            flex-grow: 1;
-            justify-content: space-between;
-            margin: 0;
-            padding: 0;
-        }
-
-        > .list > .item {
-            display: flex;
-            width: 33.3%;
-            box-sizing: border-box;
-            cursor: pointer;
-            min-height: 61px;
-            &:hover {
-                background-color: @color-3;
-            }
-            &:nth-child(1) {
-                order: 1;
-            }
-        }
-
-        > .list > .item > .link {
-            display: flex;
-            align-items: center;
-            margin: 0 auto;
-        }
-
-        > .list > .item > .link > .icon {
-            margin-right: 8px;
         }
     }
 }
 
 @media @tablet-up {
     .nav-block {
-        > .item.-cart {
+        > .link.-nav.-cart {
             order: 1;
             margin-bottom: 0;
             margin-left: 1px;
@@ -118,130 +73,63 @@
             padding: 0 37px;
         }
 
-        > .item.-menu {
+        > .link.-nav.-menu {
             min-height: 100px;
             padding: 0 30px;
         }
 
-        > .item.-menu > .link > .text {
+        > .link.-nav.-menu > .text {
             padding: 10px 0 0;
         }
 
-        > .item.-logo {
+        > .box.-logo {
             display: flex;
             top: 55%;
             left: 42%;
             padding: 0;
         }
 
-        > .item.-logo > .icon {
+        > .box.-logo > .icon {
             height: 45px;
             width: 243px;
         }
 
-        > .list {
-            display: flex;
-            justify-content: flex-end;
-            margin: 0;
-            padding: 0;
+        > .nav-wrap {
             flex-grow: 0;
             width: auto;
-        }
-
-        > .list > .item {
-            width: auto;
-            min-height: 100px;
-            padding: 0 15px;
-
-            &:nth-child(1) {
-                order: 0;
-            }
-        }
-
-        > .list > .item > .link {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        > .list > .item > .link > .icon {
-            padding-bottom: 10px;
-        }
-
-        > .list > .item.-list {
-            display: none;
         }
     }
 }
 
 @media @desktop-up {
     .nav-block {
-        > .list.-nav > .item {
-            display: flex;
-            justify-content: space-between;
-            box-sizing: border-box;
-            padding: 0 25px;
-        }
-
-        > .list.-nav > .item > .link {
-            display: flex;
-            width: 100%;
-            align-items: center;
-        }
-
-        > .list > .item.-list {
-            display: flex;
-        }
-
-        > .item.-logo {
+        > .box.-logo {
             top: 55%;
             left: 50%;
-        }
-
-        > .list > .item > .link > .icon {
-            margin-right: 0;
         }
     }
 }
 
 @media @big-desktop {
     .nav-block {
-        .text {
+        .link.-nav {
             font-size: @relative-13;
             font-weight: 700;
             text-transform: uppercase;
-        }
-
-        > .list.-nav > .item {
-            padding: 0 20px;
-        }
-
-        > .list.-nav > .item > .link {
             flex-direction: row;
-            display: flex;
             justify-content: center;
-            align-items: center;
         }
 
-        > .list > .item > .link > .icon {
-            margin-right: 8px;
-            padding: 0;
-        }
-
-        > .item.-menu {
+        > .link.-nav.-menu {
             padding: 0 37px;
-        }
-
-        > .item.-menu > .link {
-            display: flex;
             flex-direction: row;
         }
 
-        > .item.-menu > .link > .icon {
+        > .link.-nav > .icon {
             margin-right: 10px;
         }
 
-        > .item.-menu > .link > .text {
+        > .link.-nav > .text {
             padding: 0;
         }
     }

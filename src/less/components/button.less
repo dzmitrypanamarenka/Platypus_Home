@@ -1,0 +1,62 @@
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: normal;
+    word-spacing: normal;
+    font-family: @font-1;
+
+    &.-big {
+        width: 199px;
+        height: 55px;
+        font-size: 1.1rem;
+        line-height: 55px;
+    }
+
+    &.-med {
+        width: 159px;
+        height: 44px;
+        font-size: .88rem;
+        line-height: 44px;
+    }
+
+    &.-small {
+        width: 127px;
+        height: 35px;
+        font-size: .7rem;
+        line-height: 35px;
+        margin-right: 8px;
+    }
+
+    &.-black {
+        color: @primary-color;
+        border: @border-primary;
+
+        &:hover {
+            color: @secondary-color;
+            background-color: @primary-color;
+        }
+    }
+
+    &.-white {
+        color: @secondary-color;
+        border: @border-secondary;
+
+        &:hover {
+            color: @primary-color;
+            background-color: @secondary-color;
+        }
+    }
+
+    &.-turq {
+        color: @color-3;
+        border: @border-3;
+
+        &:hover {
+            color: @secondary-color;
+            background-color: @color-3;
+        }
+    }
+}
