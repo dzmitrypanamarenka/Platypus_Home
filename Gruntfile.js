@@ -9,7 +9,7 @@ module.exports = function (grunt) {
                     'dist/css/style.css': 'src/less/style.less',
                     'dist/css/fonts.css': 'src/less/fonts.less',
                     'dist/css/homepage.css': 'src/less/homepage.less',
-                    'dist/css/product-detail.css': 'src/less/style.less',
+                    'dist/css/product-detail.css': 'src/less/product-detail.less'
 
                 }
             }
