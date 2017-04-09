@@ -72,10 +72,10 @@
 
     <main>
         <section class="content-block">
-            <div class="slider-wrapper">
+            <div class="slider-box">
 
             </div>
-            <form action="" class="wrap -radio">
+            <form action="" class="radio-box">
                 <input type="radio" id="features-radio" class="visually-hidden">
                 <label for="features-radio" class="title -normal">features</label>
                 <input type="radio" id="trending-radio" class="visually-hidden">
@@ -83,7 +83,7 @@
                 <input type="radio" id="reviews-radio" class="visually-hidden">
                 <label for="reviews-radio" class="title -normal">reviews</label>
             </form>
-            <div class="features visually-hidden">
+            <div class="wrapper -features visually-hidden">
                 <div class="box -details">
                     <b class="title -small">product details</b>
                     <p class="text">Inner sleeve construction delivers a snug, comfortable fit Stretchy upper provides a
@@ -100,7 +100,7 @@
                     </p>
                 </div>
             </div>
-            <div class="trending ">
+            <div class="trending-box visually-hidden">
                 <p class="text -share">share your sneakers stories with us by using the <span class="bold">#platypusshoes</span>
                     hashtag
                 </p>
@@ -133,21 +133,20 @@
                     </svg>
                 </p>
             </div>
-            <div class="review visually-hidden">
-                <div class="box -feedback">
-                    <b class="title -small"></b>
-                    <div class="box -review">
-                        <b class="title -small"></b>
-                        <div class="wrap">
-
-                        </div>
-                        <form action="">
-                            <textarea name="" cols="30" rows="10"></textarea>
-                            <textarea name="" cols="30" rows="10"></textarea>
-                            <textarea name="" cols="30" rows="10"></textarea>
-                        </form>
-                        <button class="btn -med -turq">submit review</button>
+            <div class="wrapper -review">
+                <div class="wrap -feedback">
+                    <b class="title -small">customer reviews</b>
+                    <div class="review-form">
                     </div>
+                </div>
+                <div class="review-box">
+                    <b class="title -small">write your own review</b>
+                    <form action="" class="form -review">
+                        <input type="text" class="input" placeholder="nickname">
+                        <input type="text" class="input" placeholder="title">
+                        <textarea name="" class="input -textarea" placeholder="review"></textarea>
+                        <button class="btn -med -turq">submit review</button>
+                    </form>
                 </div>
             </div>
         </section>
