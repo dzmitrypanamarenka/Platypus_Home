@@ -75,78 +75,82 @@
             <div class="slider-box">
 
             </div>
-            <form action="" class="radio-box">
-                <input type="radio" id="features-radio" class="visually-hidden">
-                <label for="features-radio" class="title -normal">features</label>
-                <input type="radio" id="trending-radio" class="visually-hidden">
-                <label for="trending-radio" class="title -normal">trending</label>
-                <input type="radio" id="reviews-radio" class="visually-hidden">
-                <label for="reviews-radio" class="title -normal">reviews</label>
-            </form>
-            <div class="wrapper -features visually-hidden">
-                <div class="box -details">
-                    <b class="title -small">product details</b>
-                    <p class="text">Inner sleeve construction delivers a snug, comfortable fit Stretchy upper provides a
-                        soft, flexible feel Padded collar provides plush cushioning Molded traction pattern for
-                        flexibility and durability Outsole cutouts for visible cushioning and reduced weight<br><br>
-                        Item number: 844931-002
-                    </p>
+            <div class="product-description">
+                <input type="radio" id="features-radio" name="radio" class="input">
+                <label for="features-radio" class="title -normal" id="tab-l1">features</label>
+                <input type="radio" id="trending-radio" name="radio" class="input" checked="checked">
+                <label for="trending-radio" class="title -normal" id="tab-l11">trending</label>
+                <input type="radio" id="reviews-radio" name="radio" class="input">
+                <label for="reviews-radio" class="title -normal" id="tab-l12">reviews</label>
+
+                <div class="wrapper -features ">
+                    <div class="box -details">
+                        <b class="title -small">product details</b>
+                        <p class="text">Inner sleeve construction delivers a snug, comfortable fit Stretchy upper
+                            provides a
+                            soft, flexible feel Padded collar provides plush cushioning Molded traction pattern for
+                            flexibility and durability Outsole cutouts for visible cushioning and reduced weight<br><br>
+                            Item number: 844931-002
+                        </p>
+                    </div>
+                    <div class="box -description">
+                        <b class="title -small">description</b>
+                        <p class="text">As light and flexible as the original, the Nike Roshe Two Women's Shoe features
+                            triple-layer cushioning for a soft underfoot feel and a breathable, stretchy upper that
+                            conforms
+                            to your foot for a custom fit.
+                        </p>
+                    </div>
                 </div>
-                <div class="box -description">
-                    <b class="title -small">description</b>
-                    <p class="text">As light and flexible as the original, the Nike Roshe Two Women's Shoe features
-                        triple-layer cushioning for a soft underfoot feel and a breathable, stretchy upper that conforms
-                        to your foot for a custom fit.
+                <div class="wrapper trending-box">
+                    <p class="text -share">share your sneakers stories with us by using the <span class="bold">#platypusshoes</span>
+                        hashtag
                     </p>
-                </div>
-            </div>
-            <div class="trending-box visually-hidden">
-                <p class="text -share">share your sneakers stories with us by using the <span class="bold">#platypusshoes</span>
-                    hashtag
-                </p>
-                <div class="gallery">
                     <a href="" class="link -left">
                         <img src="../img/trending-arr-left.png" alt="" class="image">
                     </a>
-                    <a href="" class="link -item">
-                        <img src="../img/trending-slider1.png" alt="" class="image">
-                    </a>
-                    <a href="" class="link -item">
-                        <img src="../img/trending-slider2.png" alt="" class="image">
-                    </a>
-                    <a href="" class="link -item">
-                        <img src="../img/trending-slider3.png" alt="" class="image">
-                    </a>
-                    <a href="" class="link -item">
-                        <img src="../img/trending-slider4.png" alt="" class="image">
-                    </a>
-                    <a href="" class="link -item visually-hidden">
-                        <img src="../img/trending-slider5.png" alt="" class="image">
-                    </a>
+                    <div class="gallery">
+                        <a href="" class="link -item">
+                            <img src="../img/trending-slider1.png" alt="" class="image">
+                        </a>
+                        <a href="" class="link -item">
+                            <img src="../img/trending-slider2.png" alt="" class="image">
+                        </a>
+                        <a href="" class="link -item">
+                            <img src="../img/trending-slider3.png" alt="" class="image">
+                        </a>
+                        <a href="" class="link -item">
+                            <img src="../img/trending-slider4.png" alt="" class="image">
+                        </a>
+                        <a href="" class="link -item visually-hidden">
+                            <img src="../img/trending-slider5.png" alt="" class="image">
+                        </a>
+                    </div>
                     <a href="" class="link -right">
                         <img src="../img/trending-arr-right.png" alt="" class="image">
                     </a>
+                    <p class="text -follow">follow <span class="bold">@platypus_sneakers</span> on
+                        <svg class="icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 xlink:href="#icon-svg-details-instagram"></use>
+                        </svg>
+                    </p>
                 </div>
-                <p class="text -follow">follow <span class="bold">@platypus_sneakers</span> on
-                    <svg class="icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-svg-details-instagram"></use>
-                    </svg>
-                </p>
-            </div>
-            <div class="wrapper -review">
-                <div class="wrap -feedback">
-                    <b class="title -small">customer reviews</b>
-                    <div class="review-form">
+                <div class="wrapper -review">
+                    <div class="wrap -feedback">
+                        <b class="title -small">customer reviews</b>
+                        <div class="review-form">
+                        </div>
                     </div>
-                </div>
-                <div class="review-box">
-                    <b class="title -small">write your own review</b>
-                    <form action="" class="form -review">
-                        <input type="text" class="input" placeholder="nickname">
-                        <input type="text" class="input" placeholder="title">
-                        <textarea name="" class="input -textarea" placeholder="review"></textarea>
-                        <button class="btn -med -turq">submit review</button>
-                    </form>
+                    <div class="review-box">
+                        <b class="title -small">write your own review</b>
+                        <form action="" class="form -review">
+                            <input type="text" class="input" placeholder="nickname">
+                            <input type="text" class="input" placeholder="title">
+                            <textarea name="" class="input -textarea" placeholder="review"></textarea>
+                            <button class="btn -med -turq">submit review</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>

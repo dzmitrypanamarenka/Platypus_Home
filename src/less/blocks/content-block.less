@@ -1,25 +1,7 @@
-@import 'content-features';
-@import 'content-trending';
-@import 'content-review';
-
 .content-block {
     & {
         width: 75%;
-    }
-
-    > .radio-box {
         display: flex;
-        justify-content: center;
-    }
-
-    > .radio-box > .title {
-        cursor: pointer;
-        &:hover {
-            color: @color-3;
-        }
-
-        &:nth-child(4) {
-            margin: 0 3.8%;
-        }
+        flex-direction: column;
     }
 }
