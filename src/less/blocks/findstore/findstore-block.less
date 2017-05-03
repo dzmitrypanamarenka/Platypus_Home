@@ -1,3 +1,6 @@
+@findstore-block-primary-color: @secondary-color;
+@findstore-block-secondary-color: @color-3;
+
 @import 'findstore-banner';
 @import 'findstore-search';
 
@@ -15,7 +18,7 @@
             box-sizing: border-box;
         }
         > .title {
-            color: @secondary-color;
+            color: @findstore-block-primary-color;
             margin: 25px 0;
         }
         > .wrap.-info {
@@ -24,7 +27,7 @@
             flex-direction: column;
             justify-content: flex-end;
             text-transform: uppercase;
-            color: @secondary-color;
+            color: @findstore-block-primary-color;
             margin: 2% 0;
         }
         > .wrap.-info > .-subtitle {
@@ -36,7 +39,7 @@
         > .wrap.-info > .link {
             display: flex;
             justify-content: flex-end;
-            color: @secondary-color;
+            color: @findstore-block-primary-color;
         }
         > .wrap.-info > .link > .text {
             font-family: @font-0;

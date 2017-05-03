@@ -1,15 +1,19 @@
+@benefit-block-primary-color: @color-3;
+@benefit-block-background-color: #151415;
+
 @media @mobile {
     .benefits-block {
         & {
             width: 100%;
             margin: 0;
-            background-color: #151415;
+            background-color: @benefit-block-background-color;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             padding: 0 10px;
             box-sizing: border-box;
+            color: @benefit-block-primary-color;
         }
 
         > .item {
@@ -17,8 +21,6 @@
         }
 
         .benefit-item {
-            color: @color-3;
-
             &:nth-child(2) {
                 order: 1;
             }

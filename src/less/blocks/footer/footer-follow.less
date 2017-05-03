@@ -9,18 +9,16 @@
         > .wrap {
             display: flex;
             justify-content: space-between;
-            color: @secondary-color;
+            color: @footer-primary-color;
             padding: 0 .5%;
             margin-bottom: 1%;
         }
 
-        > .wrap > .text {
-            font-family: @font-4;
-            line-height: 4.6rem;
+        > .wrap > .title {
             font-size: 2.5rem;
+            line-height: 4.6rem;
             width: 48%;
-            margin: 0;
-            text-align: center;
+
         }
 
         > .wrap > .box {
@@ -33,9 +31,7 @@
         }
 
         > .wrap > .box > .text {
-            font-family: @font-0;
-            font-size: .68rem;
-            line-height: 1.8rem;
+            font: .68rem/1.8rem @font-0;
             margin: 0;
             text-align: left;
         }
@@ -48,39 +44,10 @@
         }
 
         > .social > .item {
-            display: flex;
-            background-color: #1a1a1a;
             width: 30%;
-            min-height: 43px;
-        }
-
-        > .social > .item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            &:hover {
-                background-color: #e6e6e6;
-                color: @primary-color;
-            }
-            &:hover > .text {
-                color: @primary-color;
-            }
-            &:hover > .icon {
-                fill: @primary-color;
-            }
-        }
-
-        > .social > .item > .icon {
-            fill: @secondary-color;
-            width: 21px;
-            height: 21px;
         }
 
         > .social > .item > .text {
-            color: @secondary-color;
-            font-family: @font-5;
-            font-weight: 400;
-            font-size: @relative-14;
             display: none;
         }
     }
@@ -105,7 +72,7 @@
             width: 40%;
         }
 
-        > .wrap > .text {
+        > .wrap > .title {
             width: 40%;
         }
     }
@@ -125,15 +92,11 @@
             display: block;
         }
 
-        > .social > .item > .icon {
-            margin-right: 15px;
-        }
-
         > .wrap > .box {
             width: 45%;
         }
 
-        > .wrap > .text {
+        > .wrap > .title {
             width: 40%;
         }
     }
@@ -156,7 +119,7 @@
             margin: 0 3.3% 0 0;
         }
 
-        > .wrap > .text {
+        > .wrap > .title {
             width: 50%;
             font-size: 3.2rem;
             line-height: 2.9rem;

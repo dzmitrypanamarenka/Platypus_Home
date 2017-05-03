@@ -1,10 +1,13 @@
+@brands-block-background-color: @primary-color;
+@brands-block-hover-color: rgba(255, 255, 255, .3);
+
 @media @mobile {
     .brands-block {
         & {
             width: 100%;
             box-sizing: border-box;
             margin: 0;
-            background-color: black;
+            background-color: @brands-block-background-color;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -15,11 +18,11 @@
             min-height: 102px;
             display: flex;
             width: 33%;
-            justify-content: center;;
+            justify-content: center;
             box-sizing: border-box;
 
             &:hover {
-                background-color: rgba(255, 255, 255, .3);
+                background-color: @brands-block-hover-color;
             }
 
             &:nth-child(n+5) {
@@ -28,11 +31,7 @@
         }
 
         > .item > .link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             flex-grow: 1;
-            box-sizing: border-box;
             padding: 0 9px;
         }
 

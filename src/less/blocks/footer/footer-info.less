@@ -18,11 +18,8 @@
         }
 
         > .nav > .link {
-            font-family: @font-5;
-            color: @secondary-color;
-            font-size: @relative-12;
-            font-weight: 400;
-            line-height: 1.3rem;
+            font: 400 @relative-12/1.3rem @font-5;
+            color: @footer-primary-color;
             margin: 0 auto;
             &:hover {
                 color: @color-3;
@@ -47,17 +44,15 @@
             margin-left: 2%;
         }
         > .wrap.-payment > .box > .text {
-            color: @secondary-color;
-            font-family: @font-1;
-            font-size: @relative-12;
-            font-weight: 700;
+            color: @footer-primary-color;
+            font: 700 @relative-12 @font-1;
             padding-right: 5%;
             white-space: nowrap;
         }
         > .wrap.-payment > .box > .image {
             width: 34px;
             height: 22px;
-            fill: @secondary-color;
+            fill: @footer-primary-color;
             padding-left: 1.87%;
         }
         > .wrap.-payment > .box.-secure > .text {
@@ -75,9 +70,8 @@
             justify-content: center;
         }
         > .wrap.-terms > .link {
-            font-family: @font-0;
-            color: @secondary-color;
-            font-size: @relative-10;
+            font: @relative-10 @font-0;
+            color: @footer-primary-color;
             margin-right: 6px;
         }
     }

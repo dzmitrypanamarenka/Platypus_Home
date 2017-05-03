@@ -6,40 +6,6 @@
             width: 100%;
             overflow: hidden;
         }
-
-        > .item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-sizing: border-box;
-            position: relative;
-            height: 100%;
-            overflow: hidden;
-
-            &:hover .image {
-                transform: scale(1.1);
-            }
-        }
-
-        > .item > .image {
-            transition: transform 200ms ease-out;
-            backface-visibility: hidden;
-            transform: translateZ(0);
-            width: 100%;
-        }
-
-        > .item > .btn {
-            overflow: hidden;
-            z-index: 1;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            position: absolute;
-            border: 1px solid @secondary-color;
-            font-weight: 400;
-            font-size: @relative-12;
-            font-family: @font-1;
-        }
     }
 }
 
@@ -51,7 +17,7 @@
             flex-wrap: wrap;
         }
 
-        > .item {
+        > .showcase {
             flex-basis: 50%;
         }
     }
@@ -59,11 +25,11 @@
 
 @media @desktop-up {
     .shop-block {
-        > .item {
+        > .showcase {
             flex-basis: 25%;
         }
 
-        > .item > .btn {
+        > .showcase > .btn {
             font-size: @relative-14;
             border: @border-secondary;
         }
