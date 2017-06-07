@@ -1,0 +1,32 @@
+.product-info {
+    & {
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+    }
+
+    > .title.-brand {
+        font: 400 20px @font-5;
+        text-decoration: underline;
+        justify-content: flex-start;
+    }
+
+    > .title.-main {
+        margin: 0;
+    }
+
+    > .text.-color {
+        opacity: .5;
+        font: 400 15px @font-5;
+
+    }
+
+    > .text.-price {
+        font: 400 25px @font-5;
+    }
+
+    > .text.-shipping {
+        color: @color-3;
+        font: 700 @relative-13 @font-3;
+    }
+}

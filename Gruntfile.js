@@ -51,7 +51,7 @@ module.exports = function (grunt) {
                 options: {
                     server: {
                         baseDir: "dist",
-                        index: "product-detail.html"
+                        index: "homepage.html"
                     },
                     watchTask: true,
                     notify: false
